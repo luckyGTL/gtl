@@ -1,0 +1,58 @@
+#mainwrap{
+	height: 650px;
+	position: relative;
+	background: url(../img/会员.jpg) no-repeat top left/cover;
+}
+#main{
+	width: 341px;
+	height: 333px;
+	padding: 55px 105px 62px 154px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background: rgba(255,255,255,0.9);
+	border-radius: 5px;
+}
+#main p{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin-bottom: 24px;
+}
+#main div{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#main span{
+	display: block;
+	width: 60px;
+	height: 24px;
+	float: left;
+	line-height: 24px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: right;
+}
+#main input{
+	border: 1px solid #000;
+	height: 22px;
+	border-radius: 5px;
+	float: left;
+	margin-left: 20px;
+}
+#btn{
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-left: 16px;
+}
+#btn2{
+	width: 226px;
+	height: 36px;
+	margin-left: 33px;
+	border: 0;
+	border-radius: 5px;
+	background: #fcaf45;
+	font-size: 16px;
+}

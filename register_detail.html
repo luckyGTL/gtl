@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/common.css" />
-<link rel="stylesheet" href="css/login.css" />
+<link rel="stylesheet" href="css/register_detail.css" />
 <title></title>
 </head>
 <body>
@@ -50,11 +50,25 @@
  </div>
  <div id="mainwrap" >
 <div id="main">
-	<p>使用第三方账号注册</p>
-	<div id="disanfang"></div>
-	<p>使用手机号/邮箱注册</p>
-	<input type="text" name="username" id="username" placeholder="请输入手机号或邮箱" />
-	<button>注册</button>
+	<p>欢迎加入我们！请完善您的信息</p>
+	<div>
+		<span>账号</span><input type="text" />
+	</div>
+	<div>
+		<span>手机验证码</span>
+		<input type="text" />
+		<button id="btn">重新发送</button>
+	</div>
+	<div>
+		<span>昵称</span><input type="text" />
+	</div>
+	<div>
+		<span>密码</span><input type="password" />
+	</div>
+	<div>
+		<span>确认密码</span><input type="password" />
+	</div>
+	<button id="btn2">提交</button>
 </div>
  </div>
  <div id="footerwrap">
@@ -89,5 +103,8 @@
 </div>
  </div>
 </body>
+<script src="js/jquery-1.11.0.js"></script>
+<script>
 
+</script>
 </html>
