@@ -100,21 +100,21 @@
 	background: #fff;
 }
 #nav{
-	width: 1140px;
+	width: 1080px;
 	height: 60px;
-	padding-left: 60px;
+	padding:0 60px;
 	margin: 0 auto;
 }
 
 #list {
+	width: 100%;
 	height: 60px;
-	float:left;
 }
 #list li{
 	float: left;
 }
 #list a{
-	float: left;
+	display: block;
 	width: 120px;
 	height: 60px;
 	text-align: center;
@@ -126,6 +126,14 @@
 #list a:hover{
 	background: #69cce3;
 }
+
+#list :last-child{
+	float: right;
+}
+#last{
+	background: #69cce3;
+}
+
 #mainwrap{
 	height: 650px;
 	background: #f00;
