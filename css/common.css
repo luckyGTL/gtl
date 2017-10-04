@@ -113,6 +113,7 @@
 #list li{
 	float: left;
 }
+
 #list a{
 	float: left;
 	width: 120px;
@@ -125,6 +126,7 @@
 }
 #list a:hover{
 	background: #69cce3;
+	color:#fff;
 }
 #mainwrap{
 	height: 650px;
