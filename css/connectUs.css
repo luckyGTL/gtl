@@ -17,6 +17,7 @@
 	overflow: hidden;
 }
 #main{
+<<<<<<< HEAD
 	width: 100%;
 	min-height: 1000px;
 }
@@ -35,3 +36,100 @@
 	height: 610px;
 	background: green;
 }
+=======
+	width: 1200px;
+	height: 650px;
+	margin: 0 auto;
+	
+}
+
+#main-left{
+	width:678px;
+	height:650px;
+	float: left;
+}
+
+#main-left #form1{
+	width:573px;
+	height:449px;
+	background:white;
+	margin:50px 104px;
+	border-right:1px solid #ccc;
+}
+
+#main-left #form1 input{
+	width:491px;
+	height:40px;
+	border:1px solid #cecece;
+}
+
+#main-left #form1 textarea{
+	width:491px;
+	height:74px;
+}
+
+#main-left #form1 h3{
+	font-size: 18px;
+	margin:15px 0;
+	font-weight: 0;
+	color: #313131;
+}
+
+#main-left #form1 #btn{
+	width:126px;
+	height:52px;
+	background:#fcaf45;
+	border: 0;
+	font-size: 20px;
+	color: #ffffff;
+	margin-top:14px;
+}
+
+#main-right{
+	width:520px;
+	height:650px;
+	float: left;
+}
+
+#main-right .top{
+	width:283px;
+	height:132px;
+	margin:124px 162px 2px 71px;
+}
+#main-right .top p{
+	font-size:16px;
+	text-align: center;
+	color: #313131;
+	line-height: 41px;
+}
+
+
+#main-right .bottom{
+	width:520px;
+	height:190px;
+	
+}
+#main-right .bottom ul{
+	margin-left:73px;
+}
+#main-right .bottom ul li{
+	width:144px;
+	height:190px;
+	float: left;
+}
+
+#main-right .bottom ul li span{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	width:106px;
+	height:38px;
+	
+}
+
+#main-right .bottom ul li img{
+	display: block;
+}
+
+
+>>>>>>> bd1b5c6ca19abbf723469d2a4fa3b2c311564a65

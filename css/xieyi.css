@@ -1,0 +1,62 @@
+#banner{
+	height:1278px;
+	background:url(../img/banner3.jpg) no-repeat;
+	position: relative;
+	overflow: auto;
+}
+#main{
+	width:804px;
+	height:839px;
+	
+	position: absolute;
+	left:300px;
+	top:182px;
+	
+}
+
+#main1{
+	width:306px;
+	height:46px;
+	margin-left:79px;
+	opacity: 0.7;
+	position: relative;
+	z-index: 1999;
+}
+
+#main1 .img1{
+	display: block;
+	position: absolute;
+	top:-55px;
+	
+}
+#main1 h3{
+	font-size: 24px;
+	color: white;
+	position: absolute;
+	top:60px;
+	font-weight:0;
+	margin:0 78px;
+}
+#main2{
+	height:26px;
+	background:#4c5a66;
+	opacity: 0.5;
+	margin-top:25px;
+}
+
+#main3{
+	background:rgba(255,255,255,0.3);
+	min-height:470px;
+	height: auto!important;
+	height:470px;
+}
+
+#main3 p{
+	font-size:12px;
+	width:653px;
+	color: #e3e3e3;
+	margin-left:76px;
+	line-height: 20px;
+	z-index: 999;
+	
+}
