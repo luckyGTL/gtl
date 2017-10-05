@@ -1,15 +1,37 @@
-#bannerwrap{
-	height:524px;
-	background:url(../img/conntectUS-banner.jpg) no-repeat left center;
+#headerwrap{
+	position: fixed;
+	top: 0;
+	left: 0;
 }
-
-
+#navwrap{
+	position: fixed;
+	top: 100px;
+	left: 0px;
+}
 #mainwrap{
-	height: 656px;
+	background-image: url(../img/9982_banner.jpg);
+	background-repeat: no-repeat;
+	background-position:0 160px ;
+	background-size: 1920px 490px;
+	background-attachment: fixed;
+	overflow: hidden;
 }
 #main{
-	width: 1200px;
-	height: 650px;
-	margin: 0 auto;
-	background:#f00;
+	width: 100%;
+	min-height: 1000px;
+}
+#top{
+	margin-top: 490px;
+	height: 610px;
+	background: #f00;
+	margin-bottom: 140px;
+}
+#center{
+	height: 610px;
+	background: #ff0;
+	margin-bottom: 280px;
+}
+#bottom{
+	height: 610px;
+	background: green;
 }

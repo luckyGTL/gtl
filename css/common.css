@@ -1,6 +1,5 @@
 #headerwrap,#navwrap,#mainwrap,#footerwrap{
 	width: 100%;
-	
 }
 #headerwrap{
 	height: 100px;
@@ -136,10 +135,7 @@
 	background: #69cce3;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 28de1379b961e7027ec068695b075339cf8a7b3b
 #footerwrap{
 	height: 300px;
 	background: #313131;
