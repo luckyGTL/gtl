@@ -28,6 +28,7 @@
 	height: 106px;
 }
 input{
+	float: left;
 	width: 212px;
 	border: 1px solid #000;
 	border-radius: 5px;
@@ -35,6 +36,22 @@ input{
 	margin-bottom: 10px;
 	padding-left: 10px;
 	background: #fff;
+}
+#yanzheng{
+	width:132px ;
+}
+.test{
+	position: absolute;
+	height: 34px;
+	width:130px;
+	right: 40px;
+	top: 223px;
+	background: #fcaf45;
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 34px;
+	font-family: "微软雅黑";
 }
 
 button{
