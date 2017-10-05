@@ -60,51 +60,70 @@
 		<button id="btn">重新发送</button>
 	</div>
 	<div>
-		<span>昵称</span><input type="text" />
+		<span>昵称</span><input type="text"  id="nichen"/>
+		<b id="test1">该昵称已被占用</b>
+	</div>
+	
+	<div>
+		<span>密码</span><input type="password" id="psw1"/>
 	</div>
 	<div>
-		<span>密码</span><input type="password" />
+		<span>确认密码</span><input type="password" id="psw2"/>
+		<b id="test2">两次输入密码不一致</b>
 	</div>
-	<div>
-		<span>确认密码</span><input type="password" />
-	</div>
+	
 	<button id="btn2">提交</button>
 </div>
  </div>
  <div id="footerwrap">
-<div id="footer">
-	<p id="links">
-		<a href="">关于我们</a>
-		<a href="">专业团队</a>
-		<a href="">联系我们</a>
-		<a href="">用户协议</a>
-		<a href="">隐私声明</a>
-	</p>
-	<div id="partner">
-		<div id="parleft">
-			<div id="tit">合作伙伴:</div>
-			<ul id="pic">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div id="parright">
-			<h5>微信公众号</h5>
-			<img src="" alt="" />
-		</div>
-	</div>
-	<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
-</div>
+ 	<div id="footer">
+ 		<p id="links">
+ 			<a href="">关于我们</a>
+ 			<a href="">专业团队</a>
+ 			<a href="">联系我们</a>
+ 			<a href="">用户协议</a>
+ 			<a href="">隐私声明</a>
+ 		</p>
+ 		<div id="partner">
+ 			<div id="parleft">
+ 				<div id="tit">合作伙伴:</div>
+ 				<ul id="pic">
+ 					<img src="img/pic.jpg" alt="" />
+ 				</ul>
+ 			</div>
+ 			<div class="parright">
+ 				<h5>微信公众号</h5>
+ 				<img src="img/code.jpg" alt="" />
+ 			</div>
+ 			<div class="parright ">
+ 				<h5>微博</h5>
+ 				<img src="img/code.jpg" alt="" />
+ 			</div>
+ 		</div>
+ 		<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
+ 	</div>
  </div>
 </body>
 <script src="js/jquery-1.11.0.js"></script>
 <script>
-
+	var str1='';
+	var str2='';
+	var str3='';
+$("#nichen").blur(function() {
+    	var str1 = $("#nichen").val()
+        
+    
+});
+$("#nichen").focus(function(){
+	
+})
+$("#psw1").blur(function() {
+    	var str2 = $("#psw1").val()
+        
+    
+});
+$("#psw2").blur(function(){
+	var str3 = $("#psw1").val()
+})
 </script>
 </html>

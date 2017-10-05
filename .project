@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>qzft</name>
-	<comment>Create By HBuilder</comment>
+	<name>gtl</name>
+	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -16,42 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1507083646097</id>
-			<name></name>
-			<type>10</type>
-			<matcher>
-				<id>org.eclipse.ui.ide.orFilterMatcher</id>
-				<arguments>
-					<matcher>
-						<id>org.eclipse.ui.ide.multiFilter</id>
-						<arguments>1.0-projectRelativePath-matches-false-false-bin</arguments>
-					</matcher>
-					<matcher>
-						<id>org.eclipse.ui.ide.multiFilter</id>
-						<arguments>1.0-projectRelativePath-matches-false-false-setting</arguments>
-					</matcher>
-				</arguments>
-			</matcher>
-		</filter>
-		<filter>
-<<<<<<< HEAD
-			<id>1507101522783</id>
-=======
-			<id>1507100501804</id>
->>>>>>> e3daedc2f7aa736c7bbd43c4e9b1f596b01b8e1b
-			<name></name>
-			<type>26</type>
-			<matcher>
-				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-false-node_modules</arguments>
-			</matcher>
-		</filter>
-		<filter>
-<<<<<<< HEAD
-			<id>1507101522787</id>
-=======
-			<id>1507100501805</id>
->>>>>>> e3daedc2f7aa736c7bbd43c4e9b1f596b01b8e1b
+			<id>1507165198792</id>
 			<name></name>
 			<type>26</type>
 			<matcher>

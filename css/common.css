@@ -136,10 +136,7 @@
 	background: #69cce3;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b21bba9c13ef11eb1608702ece33f6f038c36504
 #footerwrap{
 	height: 300px;
 	background: #313131;
@@ -165,7 +162,7 @@
 	border: 0;
 }
 #partner{
-	width: 860px;
+	width: 900px;
 	height: 120px;
 	margin: 0 auto;
 	
@@ -185,15 +182,8 @@
 	float: right;
 	width: 500px;
 }
-#pic li{
-	float: left;
-	width: 112px;
-	height: 40px;
-	border: 1px solid #fff;
-	margin-left: 10px;
-	margin-bottom: 10px;
-}
-#parright{
+
+.parright{
 	width: 90px;
 	height: 120px;
 	text-align: center;
@@ -203,13 +193,14 @@
 	font-family: "微软雅黑";
 	color: #fff;
 }
-#parright img{
-	border: 1px solid #f00;
+.parright img{
+	
 	margin-top: 10px;
 	display: block;
 	width: 90px;
 	height: 90px;
 }
+
 #beian{
 	font-size: 14px;
 	padding-left: 170px;
