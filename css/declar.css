@@ -6,7 +6,6 @@
 #main{
 	width:804px;
 	height:839px;
-	
 	position: absolute;
 	left:300px;
 	top:182px;
@@ -16,14 +15,25 @@
 #main1{
 	width:306px;
 	height:46px;
-	background:green;
 	margin-left:79px;
 	opacity: 0.7;
-	position: absolute;
-	border-bottom: 5px solid #216f46;
+	position:relative;
+	z-index:1999;
 }
-
-
+#main1 .img1{
+	display: block;
+	position: absolute;
+	top:-55px;
+	
+}
+#main1 h3{
+	font-size: 24px;
+	color: white;
+	position: absolute;
+	top:60px;
+	font-weight:0;
+	margin:0 78px;
+}
 #main2{
 	height:26px;
 	background:#4c5a66;
@@ -32,7 +42,7 @@
 }
 
 #main3{
-	height:791px;
+	height:751px;
 	background:rgba(255,255,255,0.3);
 
 }

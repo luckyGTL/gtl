@@ -1,0 +1,110 @@
+#mainwrap{
+	overflow: hidden;
+	background: #efefef;
+}
+#main{
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 1000px;
+	padding-top: 30px;
+}
+h3{
+	height: 85px;
+	line-height: 85px;
+	text-align: center;
+	font-size: 26px;
+	font-family: "微软雅黑";
+}
+#daytutor{
+	height: 462px;
+}
+#dleft{
+	float: left;
+	width: 335px;
+}
+#dleft li{
+	height: 110px;
+	background: #fff;
+	margin-bottom: 7px;
+}
+#dleft :last-child{
+	margin-bottom: 0;
+}
+#dright{
+	float: right;
+	width: 865px;
+	height: 462px;
+	background: #e1e1e1;
+}
+#hotactivity{
+	height:660px;
+}
+#hotactivity li{
+	width: 390px;
+	height: 320px;
+	margin-bottom: 20px;
+	float: left;
+	margin-right: 15px;
+	background: #e1e1e1;
+}
+#hotactivity img{
+	display: block;
+}
+#hotactivity :nth-child(3n){
+	margin-right: 0;
+}
+#hotactivity :nth-child(n+3){
+	margin-bottom: 0;
+}
+#tit{
+	height: 30px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	line-height: 30px;
+	float: none;
+	text-indent: 20px;
+}
+#price{
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	float: none;
+	font-family: "微软雅黑";
+	padding-left: 20px;
+}
+#onsale{
+	height: 840px;
+}
+#detail{
+	width: 920px;
+	float: left;
+}
+iframe{
+	 border: 0;
+	 overflow-x:hidden;
+}
+#location{
+	width: 255px;
+	float: right;
+}
+#group{
+	height: 660px;
+	margin-bottom: 30px;
+}
+#group li{
+	width: 390px;
+	height: 320px;
+	margin-bottom: 20px;
+	float: left;
+	margin-right: 15px;
+	background: #e1e1e1;
+}
+#group img{
+	display: block;
+}
+#group :nth-child(3n){
+	margin-right: 0;
+}
+#group :nth-child(n+3){
+	margin-bottom: 0;
+}
