@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/swiper-3.4.1.min.css" />
-		<title></title>
+		<title>首页</title>
 	</head>
 	<body>
 		 <div id="headerwrap">
@@ -59,14 +59,15 @@
 		    </div>
 		    <!-- 如果需要分页器 -->
 		    <div class="swiper-pagination"></div> 
-		    <!--选项卡-->
-		    <div class="host-detail">
+		 </div>
+		 <!--选项卡-->
+		 <div class="host-detail">
 		    	<ul>
 		            <li>
-		                <a class="first-tab tab-active"  href="#"><h2>酒店</h2></a>
+		                <a class="first-tab tab-active"  href="javascript:;"><h2>酒店</h2></a>
 		            </li>
-		            <li>
-		                <a class="second-tab" href="#"><h2>景点</h2></a>
+		            <li id="aaaaa">
+		                <a class="second-tab" href="javascript:;"><h2>景点</h2></a>
 		            </li>
 		           
 		        </ul>
@@ -74,7 +75,9 @@
 		        <div class="tabs-content">
 					<!--酒店-->
 		            <div class="tab-content-active box">
-		            	<div>
+		            	<input type="text" class="jiudian"/>
+		            	<a href="javascript:;" class="search">搜索酒店</a>
+		            	<!--<div>
 		            		<span>目的地</span><input type="text" />
 		            	</div>
 		                <div>
@@ -89,18 +92,15 @@
 		            	<div>
 		            		<input type="checkbox" />我还没有确定具体日期
 		            	</div>
-		            	<button>搜索</button>
+		            	<button>搜索</button>-->
 		            </div>
 					<!--景点-->
-		            <div class="box">
-		                
+		            <div class="box"  id="bbbbb">
+		                <!--<input type="text" class="screen"/>
+		                <a href="javascript:;" class="search">搜索</a>-->
 		            </div>
-
-		            
-
 		        </div>
 		    </div>
-		 </div>
 		 <div id="mainwrap">
 		 	<!--手风琴-->
 		 	<div id="main">
@@ -133,6 +133,7 @@
 					</ul>
 		 		</div>
 		 		<h2>景点分类</h2>
+		 		<!------------热门------------>
 		 		<div id="main2">
 		 			<h3 class="clearfix">
 		 				<a href="#" class="left pad"><i class="left icon-hot"></i>热门</a>
@@ -180,11 +181,114 @@
 		 						<div class="city">三亚</div>
 		 					</a>
 		 					<div class="tit-text">
-		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p>
+		 					</div>
 		 				</li>
 		 			</ul>
 		 		</div>
+		 		<!------------综合------------>
+		 		<div id="main3">
+		 			<h3 class="clearfix">
+		 				<a href="#" class="left pad"><i class="left icon-zonghe"></i>综合</a>
+		 				<span class="on">三亚</span>
+		 				<span>大理</span>
+		 				<span>丽江</span>
+		 				<span>张家界</span>
+		 			</h3>
+		 			<ul class="tab-theme">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali1.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali2.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie2.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p>
+		 					</div>
+		 				</li>
+		 			</ul>
+		 		</div>
+		 		<h2><a href="#">旅游指南</a></h2>
+		 		<div class="left tit">
+		 			<h3>当季推荐</h3>
+		 			<li class="hover">桂林:山涧奇特，魅力奇观</li>
+		 			<li>桂林:山涧奇特，魅力奇观</li>
+		 			<li>桂林:山涧奇特，魅力奇观</li>
+		 			<li>桂林:山涧奇特，魅力奇观</li>
+		 		</div>
+		 		<div class="right lunbo">
+		 			<div class="swiper-container lunbo-box">
+					    <div class="swiper-wrapper">
+					    	<div class="swiper-slide"><img src="img/zhangjiajie1.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/zhangjiajie3.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/zhangjiajie2.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/sanya2.jpg"/></div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					 </div>
+		 		</div>
+		 		
 		 	</div>
+		 	
+		 	<div id="main4">
+		 			<div class="service-detail">
+		 				<ul>
+		 					<li>
+		 						<i></i>
+		 						<span>全国60万家酒店</span>
+		 					</li>
+		 					<li>
+		 						<i></i>
+		 						<span>全国60万家酒店</span>
+		 					</li>
+		 					<li>
+		 						<i></i>
+		 						<span>全国60万家酒店</span>
+		 					</li>
+		 					<li>
+		 						<i></i>
+		 						<span>全国60万家酒店</span>
+		 					</li>
+		 				</ul>
+		 			</div>
+		 			<div class="e-mail">
+		 				<span>请留下您的邮箱,有惊喜哦!</span>
+		 				<input type="text"  id="email" placeholder="请留下您的Email" />
+		 				<input type="button" id="btn" value="立即订阅"/>
+		 			</div>
+	 		</div>
 		 </div>
 		 <div id="footerwrap">
 		 	<div id="footer">

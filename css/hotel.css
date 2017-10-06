@@ -1,0 +1,176 @@
+#hotelwrap{
+	height:640px;
+	width:100%;
+	background:url(../img/hotel-banner.jpg) no-repeat center center/cover;
+	position:relative;
+	overflow:hidden;
+}
+#hotel-content{
+	height:390px;
+	width:1200px;
+	margin:350px auto 0;
+	overflow:hidden;
+}
+#hotel-content .hotel-search{
+	width:700px;
+	height:82px;
+	background:rgba(255,255,255,0.3);
+	margin:0 auto; 
+	border-radius:5px;
+	padding-top:28px;
+	
+}
+.hotel-search .jiudian{
+	float:left;
+	border:0;
+	width:503px;
+	height:60px;
+	background:#fff;
+	border-radius:5px;
+	margin-left:60px;
+}
+.hotel-search .search{
+	float:left;
+	width:60px;
+	height:60px;
+	background:#ff9d00;
+	border-radius:5px;
+	margin-left:15px;
+}
+.hotel-search .search i{
+	display:block;
+	width:40px;
+	height:40px;
+	margin:10px auto;
+	background:url(../img/icon/sousuo.png) no-repeat center center/cover;
+}
+#banner-bottom{
+	color:#69cce3;
+	width:100%;
+	height:50px;
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	bottom:0;
+	
+}
+.baozheng{
+	width:872px;
+	height:100%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+}
+.baozheng li{
+	padding:5px 35px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+}
+.baozheng li i{
+	float: left;
+	width:30px;
+	height: 30px;
+	background:url(../img/icon/love.png) no-repeat center center;
+	border: 2px solid #69cce3;
+	border-radius:50%;
+	margin: 5px;
+}
+.baozheng li span{
+	float: left;
+}
+/*----------------------------内容区-------------*/
+#mainwrap{
+	background:#fff;
+}
+#main{
+	width:1200px;
+	min-height:500px;
+	height:auto!important;
+	height:500px;
+	/*overflow: hidden;*/
+	margin:0 auto;
+}
+#main .clear{
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+#main h2{
+	float: left;
+	width:100%;
+	height:28px;
+	font-size:26px;
+	margin-top:40px;
+	text-align: center;
+}
+#main h3{
+	float: left;
+	width:100%;
+	height:40px;
+	font-size:16px;
+	margin-top:10px;
+	text-align:center;
+}
+#main h3 span{
+	display: inline-block;
+	padding:0 10px;
+	cursor:pointer;
+}
+#main .pad{
+	padding-right:60px;
+}
+#main ul{
+	float: left;
+	width:100%;
+	margin:15px 0;
+	overflow:hidden;
+}
+#main ul li{
+	float:left;
+	width:290px;
+	height:286px;
+	margin-right:10px;
+	margin-bottom:20px;
+	position:relative;
+}
+#main ul li:hover img{
+	opacity:0.5;
+}
+#main ul li .pic-add{
+	width:100%;
+	height:252px;
+	overflow:hidden;
+}
+#main ul li img{
+	display:block;
+	border:0;
+	width:100%;
+	height:100%;
+	position:relative;
+	bottom:0;
+}
+.tab-theme .tit-text{
+	padding:5px 5px;
+	height:23px;
+	background:#f7f7f7;
+	line-height:20px;
+	text-align: center;
+	border-bottom:1p solid #ccc;
+	margin-bottom:1px;
+}
+.tit-text p{
+	float:left;
+	padding:0 40px 0 10px;
+	font-size:18px;
+}
+.tit-text span{
+	float:left;	
+	font-size:18px;
+}
+.tit-text span i{
+	font-style:normal;
+	font-size:22px;
+	color:#ff6600;
+}
