@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/user.css" />
+	<title></title>
+</head>
+<body>
+	<div id="headerwrap">
+ 	<div id="header">
+ 		<div id="logo">
+ 			<h3><img src="img/logo.png" height="100" /></h3>
+ 		</div>
+ 		<div id="info">
+ 			<div id="phone">
+	 			<span>
+	 				<img src="img/icon/shouji.png" alt="" />
+	 			</span>
+	 			<span>手机版</span>
+	 		</div>
+	 		<div id="tele">
+	 			<span>
+	 				<img src="img/icon/dianhua.png" alt="" width="16"/>
+	 			</span>
+	 			<span>客服热线：4009-333-666</span>
+	 		</div>
+	 		<div id="user">
+	 			<span>
+	 				
+	 			</span>
+	 			<span>大魔王666</span>
+	 		</div>
+ 		</div>
+ 		
+ 	</div>
+ </div>
+ <div id="navwrap">
+ 	<div id="nav">
+ 		<ul id="list">
+ 			<li><a href="#">首页</a></li>
+ 			<li><a href="#">景点</a></li>
+ 			<li><a href="#">酒店</a></li>
+ 			<li><a href="#">自驾游</a></li>
+ 			<li><a href="#">优惠活动</a></li>
+ 			<li id="last"><a href="#">退出登录</a></li>
+ 		</ul>
+ 	</div>
+ </div>
+ <div id="mainwrap">
+ 	<div id="main">
+ 		<ul id="tabs">
+ 			<li class="li_active">我的订单</li>
+ 			<li>个人中心<span class="triangle" style="float: right;margin-top: 25px;" id="btn1"></span></li>
+ 			<ul id="subtabs" style="display: none;">
+ 				<li>我的信息</li>
+ 				<li>账户安全</li>
+ 			</ul>
+ 			<li class="li_active">我的收藏</li>
+ 		</ul>
+ 		<div id="detail">
+ 			<div id="myorder">
+ 				<div id="options1">
+ 					<span>全部订单</span>
+ 					<span>未出行</span>
+ 					<span>待付款</span>
+ 					<span>待评价</span>
+ 				</div>
+ 				<div id="options2">
+ 					<ul style="overflow: hidden;">
+ 						<li><input type="checkbox"  />&nbsp;全选</li>
+ 						<li>类型 <span class="triangle" style="display:inline-block;margin-top: 12px;"></span></li>
+ 						<li>旅客</li>
+ 						<li>行程</li>
+ 						<li>金额</li>
+ 						<li>订单状态 <span class="triangle" style="display:inline-block;margin-top: 12px;"></span></li>
+ 						<li>操作</li>
+ 					</ul>
+ 				</div>
+ 				<div id="options3">
+ 					<p>
+ 						<span><input type="checkbox"  />&nbsp;订单号:<b >4532323232</b></span>
+ 						<span>预定日期:<b>2017-03-03</b></span>
+ 					</p>
+ 				</div>
+ 				<ul id="options4">
+ 					<li>
+ 						<span>南京港际大酒店</span>
+ 						<span>酒店</span>
+ 						<span>张三</span>
+ 						<span>2017-10-04</span>
+ 						<span style="color: #e56700;">￥ 208</span>
+ 						<span>未提交</span>
+ 						<span><button style="border-radius: 3px;border: 0;background-color: #69cce3;color: #fff;">继续提交</button></span>
+ 					</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="footerwrap">
+<div id="footer">
+	<p id="links">
+		<a href="">关于我们</a>
+		<a href="">专业团队</a>
+		<a href="">联系我们</a>
+		<a href="">用户协议</a>
+		<a href="">隐私声明</a>
+	</p>
+	<div id="partner">
+		<div id="parleft">
+			<div id="tit">合作伙伴:</div>
+			<ul id="pic">
+				<img src="img/pic.jpg" alt="" />
+			</ul>
+		</div>
+		<div class="parright">
+			<h5>微信公众号</h5>
+			<img src="img/code.jpg" alt="" />
+		</div>
+		<div class="parright ">
+			<h5>微博</h5>
+			<img src="img/code.jpg" alt="" />
+		</div>
+	</div>
+	<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
+</div>
+ </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+<script>
+	$(".li_active").click(function(){
+		$(this).css("border-left","5px solid #009944").siblings().css("border-left","5px solid #f7f7f7")
+	})
+	$("#btn1").click(function(){
+		if($(this).hasClass("triangle")){
+			$(this).removeClass("triangle").addClass("triangle_active")
+			$("#subtabs").show()
+		}else{
+			$(this).removeClass("triangle_active").addClass("triangle")
+			$("#subtabs").hide()
+		}
+	})
+	$("#subtabs li").click(function(){
+		$(this).css("border-left","5px solid #009944").addClass("sub_active")
+		.siblings().css("border-left","5px solid #f7f7f7").removeClass("sub_active")
+	})
+</script> 
+</html>
