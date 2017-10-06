@@ -110,12 +110,20 @@ $("#psw1").blur(function() {
 $("#psw2").blur(function(){
 	var str3 = $("#psw1").val()
 })
+var timer = null;
 $("#btn").click(function(){
-	var num = 60;
 	clearInterval(timer)
-	var timer = setInterval(function(){
+	$(this).attr({"disabled":"disabled"})
+	var num = 60;
+	timer = setInterval(function(){
 		num--;
-		$("#btn").html(num +'S')
+		if(num>0){
+			$("#btn").html(num +'S')
+			
+		}else{
+			$("#btn").html('重新发送')
+			$(this).attr({"disabled":"enabled"})
+		}
 	},1000)
 })
 </script>

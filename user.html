@@ -60,7 +60,7 @@
  			<li class="li_active">我的收藏</li>
  		</ul>
  		<div id="detail">
- 			<div id="myorder">
+ 			<div id="myorder" style="display: none;">
  				<div id="options1">
  					<span>全部订单</span>
  					<span>未出行</span>
@@ -68,13 +68,26 @@
  					<span>待评价</span>
  				</div>
  				<div id="options2">
- 					<ul style="overflow: hidden;">
+ 					<ul >
  						<li><input type="checkbox"  />&nbsp;全选</li>
- 						<li>类型 <span class="triangle" style="display:inline-block;margin-top: 12px;"></span></li>
+ 						<li>
+ 							类型 <span class="triangle" style="display:inline-block;margin-top: 12px;" id="btn2"></span>
+ 							<div  style="display: none;" id="pfenlei">
+ 								<div class="fenlei">酒店</div>
+ 								<div class="fenlei">景点</div>
+ 							</div>
+ 						</li>
  						<li>旅客</li>
  						<li>行程</li>
  						<li>金额</li>
- 						<li>订单状态 <span class="triangle" style="display:inline-block;margin-top: 12px;"></span></li>
+ 						<li>
+ 							订单状态 <span class="triangle" style="display:inline-block;margin-top: 12px;" id="btn3"></span>
+ 							<div style="display: none;" id="pstate">
+ 								<div class="state">待付款</div>
+ 								<div class="state">待评价</div>
+ 								<div class="state">未出行</div>
+ 							</div>
+ 						</li>
  						<li>操作</li>
  					</ul>
  				</div>
@@ -95,6 +108,32 @@
  						<span><button style="border-radius: 3px;border: 0;background-color: #69cce3;color: #fff;">继续提交</button></span>
  					</li>
  				</ul>
+ 				<div id="options5">
+ 					<span>
+ 						<b style="display:block;width: 0;height: 0;border-right: 6px solid #000;border-top: 6px solid transparent;border-bottom: 6px solid transparent;margin-top: 3px;margin-left: 6px;"></b>
+ 					</span>
+ 					<span>1</span>
+ 					<span>
+ 						下一页
+ 						<b style="display:block;float:right;width: 0;height: 0;border-left: 6px solid #000;border-top: 6px solid transparent;border-bottom: 6px solid transparent;margin-top: 3px;margin-left: 6px;"></b>
+ 					</span>
+ 					<span>确定</span>
+ 				</div>
+ 			</div>
+ 			<div id="infos">
+ 				<div id="userinfo">
+ 					<p>个人信息设置</p>
+ 					<div id="infodetails">
+ 						<div></div>
+ 						<div></div>
+ 						<div></div>
+ 						<div></div>
+ 						<div></div>
+ 						<div></div>
+ 						<div></div>
+ 					</div>
+ 				</div>
+ 				<div id="userimg"></div>
  			</div>
  		</div>
  	</div>
@@ -145,6 +184,24 @@
 	$("#subtabs li").click(function(){
 		$(this).css("border-left","5px solid #009944").addClass("sub_active")
 		.siblings().css("border-left","5px solid #f7f7f7").removeClass("sub_active")
+	})
+	$("#btn2").click(function(){
+		if($(this).hasClass("triangle")){
+			$(this).removeClass("triangle").addClass("triangle_active")
+			$("#pfenlei").show()
+		}else{
+			$(this).removeClass("triangle_active").addClass("triangle")
+			$("#pfenlei").hide()
+		}
+	})
+	$("#btn3").click(function(){
+		if($(this).hasClass("triangle")){
+			$(this).removeClass("triangle").addClass("triangle_active")
+			$("#pstate").show()
+		}else{
+			$(this).removeClass("triangle_active").addClass("triangle")
+			$("#pstate").hide()
+		}
 	})
 </script> 
 </html>
