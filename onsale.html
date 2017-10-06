@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/swiper-3.4.1.min.css" />
 <link rel="stylesheet" href="css/onsale.css" />
 <title></title>
 </head>
@@ -94,12 +95,91 @@
  		</ul>
  		<h3>近期热门活动</h3>
  		<div id="onsale">
- 			<div id="detail">
- 				<iframe width="920" height="840" src="subsale.html" >
- 					
- 				</iframe>
+ 			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<ul class="subslide">
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+						</ul>
+			        </div>
+			        <div class="swiper-slide">
+			        	<ul class="subslide">
+							<li>
+								<div class="left"></div>
+								<div class="right">
+									<h4>郑州方特一日游</h4>
+									<p>目的地 : 郑州市中牟县郑开大道和万三公路交叉口</p>
+									<p>包含项目:酒店、 门票</p>
+									<p>优惠 <span>立减</span></p>
+									<p><b style="display: inline-block;padding-top: 17px;font-size: 16px;color: #ff9d00;font-style: normal;">￥</b>
+										<span style="display: inline-block;font-size: 23px;padding-top: 10px;color: #ff9d00;">650</span>
+										<b style="display: inline-block;padding-top: 15px;font-size: 18px;font-family: "微软雅黑";font-style:normal ;">起</b><button>立即抢购</button></p>
+									<p><span style="display: block;float: right;color:#999;font-family:"微软雅黑";">601件已售出</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+						</ul>
+			        </div>
+			        <div class="swiper-slide">
+			        	<ul class="subslide">
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+							<li>
+								<div class="left"></div>
+								<div class="right"></div>
+							</li>
+						</ul>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			   
+			    
+			    
+			</div>
+ 			<div id="location">
+ 				<h4>出发地</h4>
+ 				<ul class="sublocation">
+ 					<li></li>
+ 					<li></li>
+ 					<li></li>
+ 					<li></li>
+ 					<li></li>
+ 				</ul>
+ 				<h4>目的地</h4>
+ 				<ul class="sublocation">
+ 					<li></li>
+ 					<li></li>
+ 					<li></li>
+ 					<li></li>
+ 					<li></li>
+ 				</ul>
  			</div>
- 			<div id="location"></div>
  		</div>
  		<h3>特卖抢购</h3>
  		<ul id="group">
@@ -166,7 +246,19 @@
  </div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+<script type="text/javascript" src="js/swiper-3.4.1.min.js" ></script>
 <script>
-	
+	var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+//  autoplay:3000,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination'
+    
+   
+    
+    
+  })        
 </script>
 </html>

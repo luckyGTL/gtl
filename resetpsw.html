@@ -110,5 +110,13 @@ $("#psw1").blur(function() {
 $("#psw2").blur(function(){
 	var str3 = $("#psw1").val()
 })
+$("#btn").click(function(){
+	var num = 60;
+	clearInterval(timer)
+	var timer = setInterval(function(){
+		num--;
+		$("#btn").html(num +'S')
+	},1000)
+})
 </script>
 </html>

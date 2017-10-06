@@ -7,6 +7,7 @@
 	position: fixed;
 	top: 100px;
 	left: 0px;
+	background: #009cad;
 }
 #mainwrap{
 	background-image: url(../img/9982_banner.jpg);
@@ -17,7 +18,6 @@
 	overflow: hidden;
 }
 #main{
-<<<<<<< HEAD
 	width: 100%;
 	min-height: 1000px;
 }
@@ -33,10 +33,7 @@
 	margin-bottom: 280px;
 }
 #bottom{
-	height: 610px;
 	background: green;
-}
-=======
 	width: 1200px;
 	height: 650px;
 	margin: 0 auto;
@@ -131,5 +128,3 @@
 	display: block;
 }
 
-
->>>>>>> bd1b5c6ca19abbf723469d2a4fa3b2c311564a65
