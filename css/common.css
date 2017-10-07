@@ -13,6 +13,9 @@
 #logo{
 	float: left;
 }
+#logo a:hover{
+	text-decoration:none;
+}
 #info{
 	float: right;
 	height: 50px;
@@ -117,7 +120,7 @@
 
 #navwrap{
 	height: 60px;
-	background: #009cad;
+	background:#009cad;
 }
 #nav{
 	width: 1200px;
@@ -150,6 +153,7 @@
 #list a:hover{
 	background: #00878a;
 	color: #fff;
+	text-decoration:none;
 }
 
 #footerwrap{
