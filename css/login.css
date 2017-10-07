@@ -26,6 +26,13 @@
 }
 #disanfang{
 	height: 106px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#disanfang span{
+	width: 43px;
+	height: 43px;
 }
 input{
 	float: left;

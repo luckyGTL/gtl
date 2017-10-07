@@ -3,7 +3,7 @@
 }
 #headerwrap{
 	height: 100px;
-	background: #d2d2d2;
+	background: #fff;
 }
 #header{
 	width: 1200px;
@@ -15,99 +15,123 @@
 }
 #info{
 	float: right;
-	height: 100px;
-	width: 660px;
+	height: 50px;
+	width: 665px;
+	padding-top: 30px;
 }
 #phone{
 	float: left;
-	margin-top: 40px;
-	width: 76px;
-	height: 25px;
-	margin-right: 80px;
+	width: 155px;
+	height: 40px;
 	
 }
 #phone :first-child{
 	display: block;
+	position: relative;
 	float: left;
-	width: 25px;
-	height: 25px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	background: #fff;
-	
+	background: #009cad;
+	margin-right: 15px;
+}
+#phone :first-child img{
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	width: 22px;
+	height: 22px;
 }
 #phone :last-child{
 	display: block;
-	float:right;
-	height: 25px;
-	line-height: 25px;
+	line-height: 40px;
 	font-size: 14px;
 	font-family: "微软雅黑";
 }
 
 #tele{
-	margin-top: 40px;
 	float: left;
-	height: 25px;
-	width: 195px;
-	margin-right: 110px;
+	height: 40px;
+	width: 310px;
 	
 }
 #tele :first-child{
 	display: block;
+	position: relative;
 	float: left;
-	width: 25px;
-	height: 25px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	background: #fff;
+	background: #ff4d4d;
+	margin-right: 15px;
 	
+	
+}
+#tele :first-child img{
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	width: 22px;
+	height: 22px;
 }
 #tele :last-child{
 	display: block;
-	float:right;
-	height: 25px;
-	line-height: 25px;
+	line-height: 40px;
 	font-size: 14px;
 	font-family: "微软雅黑";
+	
 }
 
 
 #user{
-	margin-top:30px;
 	float: left;
-	width: 150px;
-	height: 45px;
+	width: 195px;
+	height: 40px;
 }
 #user :first-child{
 	display: block;
+	position: relative;
 	float: left;
-	width: 45px;
-	height: 45px;
-	background: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #5a5a5a;
+	margin-right: 15px;
 	
+	
+}
+#user :first-child img{
+	position: absolute;
+	left: 9px;
+	top: 9px;
+	width: 22px;
+	height: 22px;
 }
 #user :last-child{
 	display: block;
-	float:right;
-	height: 45px;
-	line-height: 45px;
-	font-size: 20px;
+	line-height: 40px;
+	font-size: 16px;
 	font-family: "微软雅黑";
+	
 }
 
-#navewrap{
+#navwrap{
 	height: 60px;
-	background: #fff;
+	background: #009cad;
 }
 #nav{
-	width: 1080px;
+	width: 1200px;
+	position: relative;
 	height: 60px;
-	padding:0 60px;
 	margin: 0 auto;
 }
 
 #list {
-	width: 100%;
+	position: absolute;
+	left: 60px;
+	top: 0;
 	height: 60px;
+	
 }
 #list li{
 	float: left;
@@ -115,7 +139,7 @@
 
 #list a{
 	display: block;
-	width: 120px;
+	width: 100px;
 	height: 60px;
 	text-align: center;
 	line-height: 60px;
@@ -124,20 +148,13 @@
 	color: #000;
 }
 #list a:hover{
-	background: #69cce3;
+	background: #00878a;
 	color: #fff;
-}
-
-#list :last-child{
-	float: right;
-}
-#last{
-	background: #69cce3;
 }
 
 #footerwrap{
 	height: 300px;
-	background: #313131;
+	background: #f7f7f7;
 }
 #footer{
 	width: 1200px;
@@ -150,11 +167,11 @@
 	padding-top: 35px;
 }
 #links a{
-	color: #fff;
+	color: #000;
 	font-size: 20px;
 	float: left;
 	padding:0 35px;
-	border-right: 1px solid #fff;
+	border-right: 1px solid #000;
 }
 #links a:last-child{
 	border: 0;
@@ -173,7 +190,7 @@
 }
 #tit{
 	font-size: 20px;
-	color: #fff;
+	color: #000;
 	float: left;
 }
 #pic{
@@ -189,7 +206,7 @@
 	margin-left: 50px;
 	font-size: 12px;
 	font-family: "微软雅黑";
-	color: #fff;
+	color: #000;
 }
 .parright img{
 	
@@ -198,11 +215,58 @@
 	width: 90px;
 	height: 90px;
 }
-
+#youqing{
+	padding-left: 150px;
+	font-size: 14px;
+	padding-top: 10px;
+	font-family: "微软雅黑";
+	height: 30px;
+}
+#youqing a{
+	display: inline-block;
+	margin-right: 25px;
+	color: #000;
+}
 #beian{
 	font-size: 14px;
-	padding-left: 170px;
+	padding-left: 150px;
 	font-family: "微软雅黑";
-	line-height: 90px;
+	height: 50px;
+	color: #000;
+}
+#login{
+	position:absolute ;
+	right: 85px;
+	top: 17px;
+	height:25px;
+	line-height: 25px;
+	padding: 0 5px;
+	border-radius: 5px;
+	background: #69cce3;
+}
+#login a{
+	float: left;
+	width: 46px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "微软雅黑";
 	color: #fff;
+}
+#login :first-child{
+	border-right:1px solid #000;
+}
+#tuichu{
+	position:absolute ;
+	right: 85px;
+	top: 17px;
+	width: 92px;
+	height:25px;
+	line-height: 25px;
+	padding: 0 5px;
+	border-radius: 5px;
+	background: #69cce3;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #fff;
+	text-align: center;
 }
