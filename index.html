@@ -6,13 +6,16 @@
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/swiper-3.4.1.min.css" />
+		<script src="js/jquery-1.11.0.js"></script> 
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
 		<title>首页</title>
 	</head>
 	<body>
 		 <div id="headerwrap">
 		 	<div id="header">
 		 		<div id="logo">
-		 			<h3><img src="img/logo.png" height="100" /></h3>
+		 			<h3 style="margin-top:0;"><img src="img/logo.png" height="100" /></h3>
 		 		</div>
 		 		<div id="info">
 		 			<div id="phone">
@@ -40,7 +43,8 @@
 		 <div id="navewrap">
 		 	<div id="nav">
 		 		<ul id="list">
-		 			<li><a href="#">首页</a></li>
+		 			<!-----------a有下划线------->
+		 			<li><a href="#" style="text-decoration:none;">首页</a></li>
 		 			<li><a href="#">景点</a></li>
 		 			<li><a href="#">酒店</a></li>
 		 			<li><a href="#">自驾游</a></li>
@@ -49,7 +53,6 @@
 		 		</ul>
 		 	</div>
 		 </div>
-		
 		 <div class="swiper-container">
 		    <div class="swiper-wrapper">
 		    	<div class="swiper-slide"><img src="img/index-banner1.jpg"/></div>
@@ -59,76 +62,86 @@
 		    </div>
 		    <!-- 如果需要分页器 -->
 		    <div class="swiper-pagination"></div> 
+		    <div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
 		 </div>
-		 <!--选项卡-->
+		 <!--选项卡-->	 
 		 <div class="host-detail">
-		    	<ul>
-		            <li>
-		                <a class="first-tab tab-active"  href="javascript:;"><h2>酒店</h2></a>
-		            </li>
-		            <li id="aaaaa">
-		                <a class="second-tab" href="javascript:;"><h2>景点</h2></a>
-		            </li>
-		           
-		        </ul>
-
-		        <div class="tabs-content">
-					<!--酒店-->
-		            <div class="tab-content-active box">
+		 	<div class="tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li  class="active"><a href="#Section1" data-toggle="tab"><h2 style="margin-top:0;line-height:0.8em;">景点</h2></a></li>
+                    <li><a href="#Section2" data-toggle="tab"><h2 style="margin-top:0;line-height:0.8em;">酒店</h2></a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                	<div class="tab-content-active box tab-pane active" id="Section1">
 		            	<input type="text" class="jiudian"/>
-		            	<a href="javascript:;" class="search">搜索酒店</a>
-		            	<!--<div>
-		            		<span>目的地</span><input type="text" />
-		            	</div>
-		                <div>
-		            		<span>入住时间</span><input type="text" />
-		            	</div>
-		                <div>
-		            		<span>退房时间</span><input type="text" />
-		            	</div>
-		                 <div>
-		            		<span>住客人数</span><input type="text" />
-		            	</div>
-		            	<div>
-		            		<input type="checkbox" />我还没有确定具体日期
-		            	</div>
-		            	<button>搜索</button>-->
-		            </div>
-					<!--景点-->
-		            <div class="box"  id="bbbbb">
-		                <!--<input type="text" class="screen"/>
-		                <a href="javascript:;" class="search">搜索</a>-->
-		            </div>
-		        </div>
-		    </div>
+		            	<a href="javascript:;" class="search">搜索</a>
+	                </div>
+	                <div class="box tab-pane"  id="Section2">
+		                <input type="text" class="screen"/>
+		                <a href="javascript:;" class="search">搜索酒店</a>
+	               </div>
+                </div>
+            </div>
+            <!--景点热门-->
+            <div class="hotScenic">
+            	<div class="hotCity">
+            		<span>热门景点</span>
+            	</div>
+            	<div class="cityLists">
+            		<a href="#" class="hover">香港</a>
+            		<a href="#">澳门</a>
+            		<a href="#">夜上海</a>
+            		<a href="#">青岛</a>
+            		<a href="#">泰山</a>
+            		<a href="#">北京</a>
+            		<a href="#">三亚</a>
+            	</div>
+            </div>
+	    </div>
 		 <div id="mainwrap">
 		 	<!--手风琴-->
 		 	<div id="main">
 		 		<div id="main1">
 		 			<ul class="clearfix">
 						<li>
-							<div class="des"><h4>园林酒店</h4></div>
-							<div style="background: url(img/1.jpg) center;"></div>
+							<a href="hotel.html" target="_blank">
+								<div class="des"><h4>园林酒店</h4></div>
+								<div style="background: url(img/1.jpg) center;"></div>
+							</a>
+							
 						</li>
 						<li>
-							<div class="des"><h4>设计师酒店</h4></div>
-							<div style="background: url(img/2.jpg) center;"></div>
+							<a href="hotel.html" target="_blank">
+								<div class="des"><h4>设计师酒店</h4></div>
+								<div style="background: url(img/2.jpg) center;"></div>
+							</a>
 						</li>
 						<li>
-							<div class="des"><h4>青年旅社</h4></div>
-							<div style="background: url(img/3.jpg) center;"></div>
+							<a href="hotel.html" target="_blank">
+								<div class="des"><h4>青年旅社</h4></div>
+								<div style="background: url(img/3.jpg) center;"></div>
+							</a>
 						</li>
 						<li>
-							<div class="des"><h4>特色客栈</h4></div>
-							<div style="background: url(img/4.jpg) center;"></div>
+							<a href="hotel.html" target="_blank">
+								<div class="des"><h4>特色客栈</h4></div>
+								<div style="background: url(img/4.jpg) center;"></div>
+							</a>
 						</li>
 						<li>
-							<div class="des"><h4>海岛酒店</h4></div>
-							<div style="background: url(img/5.jpg) center;"></div>
+							<a href="hotel.html" target="_blank">
+								<div class="des"><h4>海岛酒店</h4></div>
+								<div style="background: url(img/5.jpg) center;"></div>
+							</a>
 						</li>
 						<li>
-							<div class="des"><h4>海外温泉</h4></div>
-							<div style="background: url(img/6.jpg) center;"></div>
+							<a href="hotel.html" target="_blank">
+								<div class="des"><h4>海外温泉</h4></div>
+								<div style="background: url(img/6.jpg) center;"></div>
+							</a>
 						</li>
 					</ul>
 		 		</div>
@@ -142,7 +155,7 @@
 		 				<span>丽江</span>
 		 				<span>张家界</span>
 		 			</h3>
-		 			<ul class="tab-theme">
+		 			<ul class="tab-theme" id="shanghai">
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
@@ -185,17 +198,7 @@
 		 					</div>
 		 				</li>
 		 			</ul>
-		 		</div>
-		 		<!------------综合------------>
-		 		<div id="main3">
-		 			<h3 class="clearfix">
-		 				<a href="#" class="left pad"><i class="left icon-zonghe"></i>综合</a>
-		 				<span class="on">三亚</span>
-		 				<span>大理</span>
-		 				<span>丽江</span>
-		 				<span>张家界</span>
-		 			</h3>
-		 			<ul class="tab-theme">
+		 			<ul class="tab-theme" id="beijing">
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
@@ -239,6 +242,102 @@
 		 				</li>
 		 			</ul>
 		 		</div>
+		 		<!------------综合------------>
+		 		<div id="main3">
+		 			<h3 class="clearfix">
+		 				<a href="#" class="left pad"><i class="left icon-zonghe"></i>综合</a>
+		 				<span class="on">三亚</span>
+		 				<span>大理</span>
+		 				<span>丽江</span>
+		 				<span>张家界</span>
+		 			</h3>
+		 			<ul class="tab-theme" id="sanya">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali1.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali2.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie2.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p>
+		 					</div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="dali">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/sanya4.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie2.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p>
+		 					</div>
+		 				</li>
+		 			</ul>
+		 		</div>
 		 		<h2><a href="#">旅游指南</a></h2>
 		 		<div class="left tit">
 		 			<h3>当季推荐</h3>
@@ -257,6 +356,9 @@
 					    </div>
 					    <!-- 如果需要分页器 -->
 					    <div class="swiper-pagination"></div>
+					    
+					    <div class="swiper-button-prev"></div>
+    					<div class="swiper-button-next"></div>
 					 </div>
 		 		</div>
 		 		
@@ -286,7 +388,7 @@
 		 			<div class="e-mail">
 		 				<span>请留下您的邮箱,有惊喜哦!</span>
 		 				<input type="text"  id="email" placeholder="请留下您的Email" />
-		 				<input type="button" id="btn" value="立即订阅"/>
+		 				<input type="submit" id="btn" value="立即订阅"/>
 		 			</div>
 	 		</div>
 		 </div>
@@ -320,19 +422,24 @@
 		 </div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 	
-	<script>        
-	  var mySwiper = new Swiper ('.swiper-container', {
-	    direction: 'horizontal',
-	    loop:true,
-	    autoplay:2000,
-	    effect:"coverflow",
-	    // 如果需要分页器
-	    pagination: '.swiper-pagination'
-	  })        
+	<script>         
+	  var mySwiper = new Swiper('.swiper-container',{
+	  	autoplay:3000,
+	  	loop:true,
+		effect:'fade',
+		fade:{
+		  crossFade: true,
+		},
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+		pagination:'.swiper-pagination',
+		paginationClickable :true,
+		autoplayDisableOnInteraction:false
+	 })
 	</script>
 	
 </html>

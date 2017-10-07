@@ -5,7 +5,6 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/self-drive.css" />
-		
 		<title>自驾游</title>
 	</head>
 	<body>
@@ -53,23 +52,24 @@
 		 <div id="drive-banner">
 			
 		</div>
+		<!-------------------自驾游---------------->
 		<div id="mainwrap">
 		 	<div id="main">
+		 		<!------------长途自驾------------>
 				<div id="main2">
 		 			<h3 class="clearfix">
-		 				<a href="#" class="left pad">热门</a>
-		 				<span class="on">三亚</span>
-		 				<span>大理</span>
-		 				<span>丽江</span>
-		 				<span>张家界</span>
+		 				<a href="#" class="left pad">长途自驾</a>
+		 				<span class="on">当前热卖</span>
+		 				<span>川藏自驾</span>
+		 				<span>丽江自驾</span>
 		 			</h3>
 		 			<ul class="tab-theme">
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
-		 							<img src="img/sanya1.jpg" alt="三亚" />
+		 							<img src="img/sanya1.jpg" alt="凤凰古城" />
 		 						</div>
-		 						<div class="city">三亚</div>
+		 						<div class="city">凤凰古城</div>
 		 					</a>
 		 					<div class="tit-text">
 		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
@@ -77,9 +77,9 @@
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
-		 							<img src="img/sanya2.jpg" alt="三亚" />
+		 							<img src="img/sanya2.jpg" alt="凤凰古城" />
 		 						</div>
-		 						<div class="city">三亚</div>
+		 						<div class="city">凤凰古城</div>
 		 					</a>
 		 					<div class="tit-text">
 		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
@@ -87,9 +87,9 @@
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
-		 							<img src="img/sanya3.jpg" alt="三亚" />
+		 							<img src="img/sanya3.jpg" alt="凤凰古城" />
 		 						</div>
-		 						<div class="city">三亚</div>
+		 						<div class="city">凤凰古城</div>
 		 					</a>
 		 					<div class="tit-text">
 		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
@@ -97,9 +97,9 @@
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
-		 							<img src="img/sanya4.jpg" alt="三亚" />
+		 							<img src="img/sanya4.jpg" alt="凤凰古城" />
 		 						</div>
-		 						<div class="city">三亚</div>
+		 						<div class="city">凤凰古城</div>
 		 					</a>
 		 					<div class="tit-text">
 		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p>
@@ -107,10 +107,10 @@
 		 				</li>
 		 			</ul>
 		 		</div>
-		 		<!------------综合------------>
+		 		<!------------周边自驾------------>
 		 		<div id="main3">
 		 			<h3 class="clearfix">
-		 				<a href="#" class="left pad">综合</a>
+		 				<a href="#" class="left pad">周边自驾</a>
 		 				<span class="on">三亚</span>
 		 				<span>大理</span>
 		 				<span>丽江</span>
@@ -191,5 +191,18 @@
 		 		<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
 		 	</div>
 		 </div>
+		 <script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	</body>	
+	<script type="text/javascript">
+		$(function(){
+			/*景点分类的  热门*/
+			$("#main2 span").click(function(){
+				$(this).addClass("on").siblings().removeClass("on")
+			})
+		/*-------------热门-----------*/		
+			$("#main3 span").click(function(){
+				$(this).addClass("on").siblings().removeClass("on")
+			})
+		})
+	</script>
 </html>

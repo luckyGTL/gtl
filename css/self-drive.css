@@ -9,6 +9,9 @@
 	overflow: hidden;
 	margin:0 auto;
 }
+#main a{
+	color:black;
+}
 #main h2{
 	font-size:28px;
 	border-bottom: 2px solid #b5b5b5;
@@ -38,7 +41,7 @@
 	cursor:pointer;
 	color:#606060;
 	padding:1px 10px;
-	margin:4px 10px 0;
+	margin:0 10px;
 	font-size:18px;
 	border-radius:10px;	
 }
@@ -86,9 +89,6 @@
 	
 }
 /*-----------main3-------*/
-#main3 a{
-	color:black;
-}
 #main3 .pad{
 	padding-right:60px;
 }
@@ -108,7 +108,7 @@
 	cursor:pointer;
 	color:#606060;
 	padding:1px 10px;
-	margin:4px 10px 0;
+	margin:0 10px;
 	font-size:18px;
 	border-radius:10px;	
 }
