@@ -68,15 +68,18 @@
 			</span>
  		</div>
  		<p>使用手机号/邮箱登录</p>
- 		<input type="text" name="username" id="username" placeholder="请输入手机号或邮箱" />
- 		<span class="test" style="display: none;">手机号或邮箱格式错误</span>
- 		<input type="password" name="psw" id="psw" placeholder="密码" />
- 		<div id="code" style="display: none;">
- 			<input type="text" id="yanzheng" placeholder="请输入验证码"/>
- 			<span style="float: left;margin-left: 10px;width: 60px;height: 34px;border: 1px solid #000;"></span>
- 		</div>
+ 		<form action="" method="post">
+ 			<input type="text" name="username" id="username" placeholder="请输入手机号或邮箱" />
+	 		<span class="test" style="display: none;">手机号或邮箱格式错误</span>
+	 		<input type="password" name="psw" id="psw" placeholder="密码" />
+	 		<div id="code" style="display: none;">
+	 			<input type="text" id="yanzheng" placeholder="请输入验证码"/>
+	 			<span style="float: left;margin-left: 10px;width: 60px;height: 34px;border: 1px solid #000;"></span>
+	 		</div>
  		
- 		<button>登录</button>
+	 		<input type="submit" value="登录" style="background: #fcaf45;width: 224px;" />
+ 		</form>
+ 		
  		<div id="options">
  			<span onclick="location.href='register.html'">点击注册&gt</span>
  			<span >忘记密码&gt</span>

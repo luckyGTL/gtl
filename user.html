@@ -59,10 +59,9 @@
  			<li class="li_active">我的订单</li>
  			<li id="pbtn">个人中心<span class="triangle" style="float: right;margin-top: 25px;" id="btn1"></span>
  			</li>
- 			<ul id="subtabs" style="display: block;">
- 				<li>我的信息</li>
- 				<li>账户安全</li>
- 			</ul>
+ 			<li>我的信息</li>
+ 			<li>账户安全</li>
+ 			
  			<li class="li_active">我的收藏</li>
  		</ul>
  		<div id="detail">
@@ -191,7 +190,7 @@
 		.removeClass("lis_active").css({"border-left":"5px solid #f7f7f7","background":"#f7f7f7","color":"#000"})
 		if($(this).index() ==1){
 			$("#btn1").removeClass("triangle").addClass("triangle_active")
-			$("#subtabs").show()
+			
 		}else{
 			$("#btn1").addClass("triangle").removeClass("triangle_active")
 		}
