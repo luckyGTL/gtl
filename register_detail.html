@@ -16,19 +16,19 @@
 	<div id="info">
 		<div id="phone">
  			<span>
- 				<img src="img/icon/shouji.png" alt="" />
+ 				<img src="img/icon/手机.png" alt="" />
  			</span>
  			<span>手机版</span>
  		</div>
  		<div id="tele">
  			<span>
- 				<img src="img/icon/dianhua.png" alt="" width="16"/>
+ 				<img src="img/icon/电话.png" alt="" width="16"/>
  			</span>
  			<span>客服热线：4009-333-666</span>
  		</div>
  		<div id="user">
  			<span>
- 				
+ 				<img src="img/icon/个人.png" alt="" />
  			</span>
  			<span>大魔王666</span>
  		</div>
@@ -44,35 +44,44 @@
 		<li><a href="#">酒店</a></li>
 		<li><a href="#">自驾游</a></li>
 		<li><a href="#">优惠活动</a></li>
-		<li id="last"><a href="#">退出登录</a></li>
 	</ul>
+	<div id="login" >
+		<a href="#">登录</a><a href="#">注册</a>
+	</div>
+	<div id="tuichu" style="display: none;">
+		<span>退出登录</span>
+	</div>
 </div>
  </div>
  <div id="mainwrap" >
 <div id="main">
 	<p>欢迎加入我们！请完善您的信息</p>
-	<div>
-		<span>账号</span><input type="text" />
-	</div>
-	<div>
-		<span>手机验证码</span>
-		<input type="text" />
-		<button id="btn">重新发送</button>
-	</div>
-	<div>
-		<span>昵称</span><input type="text"  id="nichen"/>
-		<b id="test1">该昵称已被占用</b>
-	</div>
+	<form action="" method="post">
+		<div>
+			<span>账号</span><input type="text" />
+		</div>
+		<div>
+			<span>手机验证码</span>
+			<input type="text" />
+			<button id="btn">重新发送</button>
+		</div>
+		<div>
+			<span>昵称</span><input type="text"  id="nichen"/>
+			<b id="test1">该昵称已被占用</b>
+		</div>
+		
+		<div>
+			<span>密码</span><input type="password" id="psw1"/>
+		</div>
+		<div>
+			<span>确认密码</span><input type="password" id="psw2"/>
+			<b id="test2">两次输入密码不一致</b>
+		</div>
+		
+		
+		<input type="submit" value="提交" style="width: 224px;height: 34px;background: #fcaf45;"/>
+	</form>
 	
-	<div>
-		<span>密码</span><input type="password" id="psw1"/>
-	</div>
-	<div>
-		<span>确认密码</span><input type="password" id="psw2"/>
-		<b id="test2">两次输入密码不一致</b>
-	</div>
-	
-	<button id="btn2">提交</button>
 </div>
  </div>
  <div id="footerwrap">
@@ -100,6 +109,16 @@
  				<img src="img/code.jpg" alt="" />
  			</div>
  		</div>
+ 		<p id="youqing">
+ 			友情链接:&nbsp;
+ 			<a href="">穷游网</a>
+ 			<a href="">途牛旅游网</a>
+ 			<a href="">艺龙旅游指南</a>
+ 			<a href="">驴妈妈旅游网</a>
+ 			<a href="">携程攻略社区</a>
+ 			<a href="">同城旅游</a>
+ 			<a href="">天气预报15天查询</a>
+ 		</p>
  		<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
  	</div>
  </div>

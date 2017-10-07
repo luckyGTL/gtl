@@ -1,6 +1,4 @@
-#navwrap{
-	background: #009cad;
-}
+
 #mainwrap{
 	overflow: hidden;
 }
@@ -16,7 +14,7 @@
 	background: #f7f7f7;
 }
 #tabs li{
-	width: 165px;
+	width: 160px;
 	height: 58px;
 	padding-left: 15px;
 	padding-right: 20px;
@@ -44,26 +42,8 @@
 	border-left: 7px solid transparent;
 	border-bottom: 7px solid #000;
 }
-#subtabs{
-	overflow: hidden;
-	padding-top: 12px;
-}
-#subtabs li{
-	width: 165px;
-	height: 29px;
-	padding-left: 15px;
-	padding-right: 20px;
-    border-left: 5px solid #f7f7f7;
-    font-size:14px;
-    line-height: 29px;
-    font-family: "微软雅黑";
-}
-.sub_active{
-	border-bottom: 1px solid #bfbfbf;
-	background: #fff;
-	color: #7cd2e6;
-	border-left: 5px solid #009944;
-}
+
+
 #detail{
 	float: right;
 	width: 980px;
@@ -147,4 +127,47 @@ input[type="checkbox"]{
 }
 #options4 li span:nth-of-type(7){
 	width: 110px;
+}
+#options5 {
+	padding-top: 8px;
+	height: 20px;
+	padding-left: 716px;
+}
+#options5 span{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #e1e1e1;
+}
+#options5 span:nth-of-type(1){
+	width: 18px;
+	margin-right: 5px;
+}
+#options5 span:nth-of-type(2){
+	width: 18px;
+	margin-right: 5px;
+	text-align: center;
+	background: #69cce3;
+	color: #fff;
+}
+#options5 span:nth-of-type(3){
+	margin-right: 50px;
+}
+#options5 span:nth-of-type(4){
+	width: 60px;
+	text-align: center;
+}
+
+
+#infos p{
+	height: 30px;
+	background: #f4fdff;	
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 30px;
+	font-family: "微软雅黑";
+}
+#infodetails{
+	padding-left:125px ;
+	background: #f7f7f7;
 }

@@ -28,7 +28,7 @@
  		</div>
  		<div id="user">
  			<span>
- 				
+ 				<img src="img/icon/个人.png" alt="" />
  			</span>
  			<span>大魔王666</span>
  		</div>
@@ -44,18 +44,36 @@
 		<li><a href="#">酒店</a></li>
 		<li><a href="#">自驾游</a></li>
 		<li><a href="#">优惠活动</a></li>
-		<li id="last"><a href="#">退出登录</a></li>
 	</ul>
+	<div id="login" >
+		<a href="#">登录</a><a href="#">注册</a>
+	</div>
+	<div id="tuichu" style="display: none;">
+		<span>退出登录</span>
+	</div>
 </div>
  </div>
  <div id="mainwrap" >
 <div id="main">
 	<p>使用第三方账号注册</p>
-	<div id="disanfang"></div>
+	<div id="disanfang">
+		<span>
+			<a href="#"><img src="img/icon/qq.jpg" alt="" /></a>
+		</span>
+		<span>
+			<a href="#"><img src="img/icon/weixini.jpg" alt="" /></a>
+		</span>
+		<span style="margin-bottom: 0;">
+			<a href="#"><img src="img/icon/weibo.jpg" alt="" /></a>
+		</span>
+	</div>
 	<p>使用手机号/邮箱注册</p>
-	<input type="text" name="username" id="username" placeholder="请输入手机号或邮箱" />
-	<span class="test" style="display: none;">手机号或邮箱格式错误</span>
-	<button>注册</button>
+	<form action="" method="post">
+		<input type="text" name="username" id="username" placeholder="请输入手机号或邮箱" />
+		<span class="test" style="display: none;">手机号或邮箱格式错误</span>
+		<input type="submit" value="注册" style="background: #fcaf45;width: 224px;" />
+	</form>
+	
 </div>
  </div>
  <div id="footerwrap">
@@ -83,6 +101,16 @@
  				<img src="img/code.jpg" alt="" />
  			</div>
  		</div>
+ 		<p id="youqing">
+ 			友情链接:&nbsp;
+ 			<a href="">穷游网</a>
+ 			<a href="">途牛旅游网</a>
+ 			<a href="">艺龙旅游指南</a>
+ 			<a href="">驴妈妈旅游网</a>
+ 			<a href="">携程攻略社区</a>
+ 			<a href="">同城旅游</a>
+ 			<a href="">天气预报15天查询</a>
+ 		</p>
  		<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
  	</div>
  </div>
