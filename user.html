@@ -59,9 +59,8 @@
  			<li class="li_active">我的订单</li>
  			<li id="pbtn">个人中心<span class="triangle" style="float: right;margin-top: 25px;" id="btn1"></span>
  			</li>
- 			<li>我的信息</li>
- 			<li>账户安全</li>
- 			
+ 			<li class="sub-li" style="display:none;height: 30px;font-size: 14px;line-height: 30px;">我的信息</li>
+ 			<li class="sub-li" style="display:none;height: 30px;font-size: 14px;line-height: 30px;">账户安全</li>
  			<li class="li_active">我的收藏</li>
  		</ul>
  		<div id="detail">
@@ -125,21 +124,78 @@
  					<span>确定</span>
  				</div>
  			</div>
- 			<div id="infos">
+ 			<div id="infos" style="display: none;">
  				<div id="userinfo">
- 					<p>个人信息设置</p>
- 					<div id="infodetails">
- 						<div></div>
- 						<div></div>
- 						<div></div>
- 						<div></div>
- 						<div></div>
- 						<div></div>
- 						<div></div>
+ 					<p>个人信息设置 <span class="edit edits"><span>编辑</span><span>+</span><span></p>
+ 					<div id="infodetails" style="display: none;">
+						<form action="" method="post">
+							<div>
+								<span class="info1">手机</span><span id="infotele">12343233234</span><button id="infobtn1">修改</button>
+							</div>
+	 						<div>
+	 							<span class="info1">邮箱</span><span id="infoemail">未设置</span><button id="infobtn2">验证</button>
+	 						</div>
+	 						<div>
+	 							<span class="info1">昵称</span><input type="text" />
+	 						</div>
+	 						<div>
+	 							<span class="info1">姓名</span><input type="text" />
+	 						</div>
+	 						<div>
+	 							<span class="info1" >性别</span><input type="checkbox" name="sex">&nbsp;男
+	 								<input type="checkbox" name="sex">&nbsp;女
+	 						</div>
+							<input type="submit" value="保存" id="infobtn3"/>
+						</form>
  					</div>
  				</div>
- 				<div id="userimg"></div>
+ 				<div id="userimg">
+ 					<p style="margin-top: 20px;">头像设置 <span class="edit1 edits"><span>编辑</span><span>+</span><span></p>
+ 					<div id="setImg" style="display: none;">
+ 						<div id="img1">
+ 							
+ 						</div>
+ 					</div>
+ 				</div>
  			</div>
+ 		
+ 		     <div id="safe">
+ 		     	 <div id="safepsw">
+ 		     	 	<p><span>修改登录密码</span> <span class="edit2 edits"><span>编辑</span><span>+</span><span></p>
+ 		     	 	<div id="subpsw" style="display: none;">
+ 		     	 		<form action="" method="post">
+ 		     	 			<div style="margin-bottom: 20px;">
+	 		     	 			<span class="tele1">当前密码</span><input type="password" />
+	 		     	 		</div>
+	 		     	 		<div style="margin-bottom: 10px;">
+	 		     	 			<span class="tele1">新密码</span><input type="password" />
+	 		     	 		</div>
+	 		     	 		<div style="margin-bottom: 15px;padding-left: 75px;overflow: hidden;">
+	 		     	 			<span class="tele2">弱</span><span class="tele2">中</span><span class="tele2">强</span>
+	 		     	 		</div>
+	 		     	 		<div style="margin-bottom: 25px;">
+	 		     	 			<span class="tele1">确认密码</span><input type="password" />
+	 		     	 		</div>
+ 		     	 			<input type="submit" value="保存" id="tele3"/>
+ 		     	 		</form>
+ 		     	 	</div>
+ 		     	 </div>
+ 		     	 <div id="safeemail" style="margin-top: 20px;">
+ 		     	 	<p><span>邮箱验证</span> <span class="edit3 edits"><span>编辑</span><span>+</span><span></p>
+ 		     	 	<div id="subemail">
+ 		     	 		<form action="" method="post">
+ 		     	 			<div style="overflow: hidden;">
+	 		     	 			<span class="email1">邮箱地址</span><input type="text" />
+	 		     	 		</div>
+ 		     	 			<input type="submit" value="确认" id="email2"/>请在24小时内至您的查收验证邮件
+ 		     	 		</form>	
+ 		     	 	</div>
+ 		     	 </div>
+ 		     	 <div id="safetele" style="margin-top: 20px;">
+ 		     	 	<p><span>手机验证</span><span class="edit4 edits"><span>编辑</span><span>+</span><span></p>
+ 		     	 
+ 		     	 </div>
+ 		     </div>
  		</div>
  	</div>
  </div>
@@ -184,17 +240,92 @@
 </body>
 <script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
 <script>
+	var btn = true
 	$("#tabs li").click(function(){
-		
 		$(this).addClass("lis_active").css({"border-left":"5px solid #009944","background":"#fff","color":"#7cd2e6"}).siblings()
 		.removeClass("lis_active").css({"border-left":"5px solid #f7f7f7","background":"#f7f7f7","color":"#000"})
 		if($(this).index() ==1){
-			$("#btn1").removeClass("triangle").addClass("triangle_active")
+			    if(btn ==true){
+			    	
+				$("#btn1").removeClass("triangle").addClass("triangle_active")
+				$(".sub-li").show()
+				btn = false;
+				}else{
+					$("#btn1").addClass("triangle").removeClass("triangle_active")
+					$(".sub-li").hide()
+					$(this).css({"border-left":"5px solid #f7f7f7","background":"#f7f7f7","color":"#000"})
+					btn = true;
+				}
 			
 		}else{
 			$("#btn1").addClass("triangle").removeClass("triangle_active")
 		}
 	})
+	$(".edit span").click(function(){
+		if(btn== true){
+			$("#infodetails").show()
+			$(".edit span").eq(0).html("收起")
+			$(".edit span").eq(1).html("-")
+			$("#userinfo p").eq(0).css("background","#f4fdff")
+			btn = false;
+		}else{
+			$("#infodetails").hide()
+			$(".edit span").eq(0).html("编辑")
+			$(".edit span").eq(1).html("+")
+				$("#userinfo p").eq(0).css("background","#f7f7f7")
+			btn = true;
+		}
+		
+	})
+	$(".edit1 span").click(function(){
+		if(btn== true){
+			$("#setImg").show()
+			$(".edit1 span").eq(0).html("收起")
+			$(".edit1 span").eq(1).html("-")
+			$("#userimg p").eq(0).css("background","#f4fdff")
+			btn = false;
+		}else{
+			$("#setImg").hide()
+			$(".edit1 span").eq(0).html("编辑")
+			$(".edit1 span").eq(1).html("+")
+				$("#userimg p").eq(0).css("background","#f7f7f7")
+			btn = true;
+		}
+		
+	})
+	$(".edit2 span").click(function(){
+		if(btn== true){
+			$("#subpsw").show()
+			$(".edit2 span").eq(0).html("收起")
+			$(".edit2 span").eq(1).html("-")
+			$("#safepsw p").eq(0).css("background","#f4fdff")
+			btn = false;
+		}else{
+			$("#subpsw").hide()
+			$(".edit2 span").eq(0).html("编辑")
+			$(".edit2 span").eq(1).html("+")
+				$("#safepsw p").eq(0).css("background","#f7f7f7")
+			btn = true;
+		}
+		
+	})
+	$(".edit3 span").click(function(){
+		if(btn== true){
+			$("#subemail").show()
+			$(".edit3 span").eq(0).html("收起")
+			$(".edit3 span").eq(1).html("-")
+			$("#safeemail p").eq(0).css("background","#f4fdff")
+			btn = false;
+		}else{
+			$("#subemail").hide()
+			$(".edit3 span").eq(0).html("编辑")
+			$(".edit3 span").eq(1).html("+")
+				$("#safeemail p").eq(0).css("background","#f7f7f7")
+			btn = true;
+		}
+		
+	})
+	
 	
 </script> 
 </html>

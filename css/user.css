@@ -161,13 +161,162 @@ input[type="checkbox"]{
 
 #infos p{
 	height: 30px;
-	background: #f4fdff;	
 	padding-left: 20px;
 	font-size: 14px;
 	line-height: 30px;
+	background: #f7f7f7;
 	font-family: "微软雅黑";
 }
 #infodetails{
 	padding-left:125px ;
+	padding-top: 27px;
 	background: #f7f7f7;
+	border: 1px solid #999;
+	border-top: 0;
+}
+#infodetails div{
+	overflow: hidden;
+}
+.info1{
+	float: left;
+	width: 112px;
+	height: 35px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: right;
+	margin-right: 18px;
+}
+#infotele{
+	float: left;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin-right: 18px;
+}
+#infobtn1{
+	border: 0;
+	background: #f7f7f7;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #7cd2e6;
+}
+#infoemail{
+	float: left;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin-right: 22px;
+}
+#infobtn2{
+	border: 0;
+	background: #f7f7f7;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #7cd2e6;
+}
+#infobtn3{
+	margin-left: 135px;
+	height: 35px;
+	width: 80px;
+	text-align: center;
+	border: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	background: #7cd2e6;
+	margin-bottom: 30px;
+}
+.edits{
+	float: right;
+	height: 30px;
+	line-break: 30px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #7cd2e6;
+	margin-right: 20px;
+}
+.edits span{
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+.edits span:nth-last-of-type{
+	font-size: 20px;
+}
+
+#setImg{
+	padding-top: 28px;
+	padding-left: 172px;
+	background: #f7f7f7;
+}
+#img1{
+	height: 43px;
+}
+
+#safe p{
+	height: 30px;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 30px;
+	background: #f7f7f7;
+	font-family: "微软雅黑";
+}
+#subpsw{
+	padding-top: 30px;
+	padding-left: 172px;
+	padding-bottom: 39px;
+	background: #f7f7f7;
+	border: 1px solid #999;
+	border-top: 0;
+}
+.tele1{
+	float: left;
+	width: 58px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: right;
+	margin-right: 18px;
+}
+.tele2{
+	float: left;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	margin-right: 5px;
+	font-family: "微软雅黑";
+	border-top: 2px solid #999;
+}
+#tele3{
+	margin-left:76px ;
+	width: 80px;
+	background: #69cce3;
+	text-align: center;
+	border: 0;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "微软雅黑";
+}
+#subemail{
+	padding:20px 0 30px 172px;
+	background: #f7f7f7;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "微软雅黑";
+}
+.email1{
+	float: left;
+	height: 40px;
+	margin-right: 18px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+#email2{
+	margin-left: 76px;
+	width: 80px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "微软雅黑";
+	border: 0;
+	background: #69cce3;
+	text-align: center;
 }
