@@ -26,12 +26,29 @@
 	 			</span>
 	 			<span>客服热线：4009-333-666</span>
 	 		</div>
-	 		<div id="user">
-	 			<span>
-	 				<img src="img/icon/个人.png" alt="" />
-	 			</span>
-	 			<span>大魔王666</span>
-	 		</div>
+	 		{if (!empty($_SESSION['username']))}
+		 		<a href="index.php?c=index&a=">
+			 		<div id="user">
+			 			<span>
+			 				<img src="public/home/img/icon/个人.png" alt="" />
+			 			</span>
+			 			<span>
+						{$i=$_SESSION['username']}
+			 			</span>
+			 		</div>
+		 		</a>
+		 	{else}
+			 	<a href="index.php?c=index&a=login">
+			 		<div id="user">
+			 			<span>
+			 				<img src="public/home/img/icon/个人.png" alt="" />
+			 			</span>
+			 			<span>
+						您还没有登录
+			 			</span>
+			 		</div>
+			 	</a>
+	 		{/if}
  		</div>
  		
  	</div>
@@ -39,17 +56,21 @@
  <div id="navwrap">
  	<div id="nav">
  		<ul id="list">
- 			<li><a href="#">首页</a></li>
- 			<li><a href="#">景点</a></li>
- 			<li><a href="#">酒店</a></li>
- 			<li><a href="#">自驾游</a></li>
+ 			<li><a href="index.php?c=index&a=index">首页</a></li>
+		{if (!empty($dhbkbl))}
+    		{foreach ($dhbkbl as $key => $value)}
+				<li><a href="#">{$value['classname']}</a></li>
+			{/foreach}
+        {/if}
  			<li><a href="#">优惠活动</a></li>
  		</ul>
+ 		{if (empty($_SESSION['username']))}
  		<div id="login" >
- 			<a href="#">登录</a><a href="#">注册</a>
+ 			<a href="index.php?c=index&a=login">登录</a><a href="index.php?c=index&a=register">注册</a>
  		</div>
- 		<div id="tuichu" style="display: none;">
- 			<span>退出登录</span>
+ 		{else}
+ 		<div id="tuichu">
+ 			<a href="index.php?c=index&a=loginout"><span style="color: #fff;">退出登录</span></a>
  		</div>
  	</div>
  </div>
@@ -72,17 +93,17 @@
  			<input type="text" name="username" id="username" placeholder="请输入用户名" />
 	 		<span class="test" style="display: none;">用户名错误</span>
 	 		<input type="password" name="psw" id="psw" placeholder="密码" />
-	 		<div id="code" style="display: none;">
-	 			<input type="text" id="yanzheng" placeholder="请输入验证码"/>
-	 			<span style="float: left;margin-left: 10px;width: 60px;height: 34px;border: 1px solid #000;"></span>
+	 		<div id="code" style="display: block;">
+	 			<input type="text" id="yanzheng" placeholder="请输入验证码" style="width: 110px;" name="yzm" />
+	 			<img style="float: left;margin-left: 10px; margin-top: 1px; width: 90px;height: 32px;border: 1px solid #000;" src="index.php?c=index&a=verify" onclick="this.src='index.php?c=index&a=verify&r='+Math.random();">
 	 		</div>
  		
-	 		<input type="submit" value="登录" style="background: #fcaf45;width: 224px;" id="btn"/>
+	 		<input type="submit" value="登录" style="background: #fcaf45;width: 224px;" name="dlsubmit"/>
  		</form>
  		
  		<div id="options">
- 			<span onclick="location.href='register.html'">点击注册&gt</span>
- 			<span >忘记密码&gt</span>
+ 			<span style="float: right;"><a href="index.php?c=index&a=register">点击注册&gt</a></span>
+ 			<span style="float: left;"><a href="index.php?c=index&a=register">忘记密码&gt</a></span>
  		</div>
  	</div>
  </div>
@@ -113,36 +134,42 @@
  		</div>
  		<p id="youqing">
  			友情链接:&nbsp;
- 			<a href="">穷游网</a>
- 			<a href="">途牛旅游网</a>
- 			<a href="">艺龙旅游指南</a>
- 			<a href="">驴妈妈旅游网</a>
- 			<a href="">携程攻略社区</a>
- 			<a href="">同城旅游</a>
- 			<a href="">天气预报15天查询</a>
+		{if (!empty($jbyqlbl))}
+			{foreach ($jbyqlbl as $key => $value)}
+ 			<a href="{$value['website']}">
+ 			{$value['webname']}</a>&nbsp;&nbsp;
+ 			{/foreach}
+        {/if}
+
  		</p>
- 		<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
+ 		<p id="beian">Copyright ©2017 <a href="{$zdxxbl[0]['weburl']}">
+ 		{$zdxxbl[0]['webname']}</a>
+ 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京公网安备110108901530&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$zdxxbl[0]['webipc']}  营业执照信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;保险经纪资质(京)-非经营性-2016-0110</p>
  	</div>
  </div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
 <script>
 	
-	$("#username").blur(function() {
-    	var str = $("#username").val()
-        var reg = /^1[34578][0-9]{9}/;
-    	var reg1 = /[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}/;
-    	 if(!reg.test(str)&&!reg1.test(str)){
-	        $(".test").show()
-      }
-        if(str==''){
-        	$("#btn").attr({"disabled":"true"})
-        }
-    	
-	});
-	$("#username").focus(function(){
-		$(".test").hide()
-	})
+	// 开始时提交按钮禁止使用，只有当验证码不为空时，按钮才能用
+	$("input").eq(3).attr({"disabled":"true"})
+	$("input").eq(0).bind('input propertychange', function() {  
+    var aa = $("input").eq(0).val()
+    var reg = /^[a-zA-Z\d]\w{3,11}[a-zA-Z\d]$/      //只能是字母（大小写敏感），数字，下划线，不能以下划线开头和结尾  4-12位
+    if(!reg.test(aa)){
+    	$(".test").eq(0).show()
+    }else{
+    	$(".test").eq(0).hide()
+    }
+}); 
+
+$("input").eq(2).bind('input propertychange', function(){
+	var str = $("input").eq(2).val()
+	if(str != ''){
+			$("input").eq(3).removeAttr("disabled")
+	}
+})
+
 	
 </script>
 </html>

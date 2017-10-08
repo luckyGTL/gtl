@@ -46,7 +46,7 @@
 		<li><a href="#">优惠活动</a></li>
 	</ul>
 	<div id="login" >
-		<a href="#">登录</a><a href="#">注册</a>
+		<a href="index.php?c=index&a=login">登录</a><a href="index.php?c=index&a=register">注册</a>
 	</div>
 	<div id="tuichu" style="display: none;">
 		<span>退出登录</span>
@@ -58,24 +58,30 @@
 	<p>欢迎加入我们！请完善您的信息</p>
 	<form action="" method="post">
 		<div>
-			<span>账号</span><input type="text" />
+			<span>手机号</span><input type="text" name="sjyx" value="
+{if (!empty($_SESSION['sjhm']))}
+{$i=$_SESSION['sjhm']}
+{/if}"
+/>          <b style="position: absolute;display:none;height: 24px;width:130px;right: 40px;top: 106px;background: #fcaf45;border-radius: 5px;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">手机号格式不正确</b>
 		</div>
 		<div>
-			<span>手机验证码</span>
-			<input type="text" />
-			<button id="btn">重新发送</button>
+			<span>验证码</span>
+			<input type="text" name="sjyzm" />
+			<button  id = "btn" style="position: absolute;height: 24px;width:130px;right: 40px;top: 149px;background: #fcaf45;border-radius: 5px;border:0;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">重新发送</button>
 		</div>
 		<div>
-			<span>昵称</span><input type="text"  id="nichen"/>
-			<b id="test1">该昵称已被占用</b>
+			<span>用户名</span><input type="text"  id="nichen" name="username" value="{if (!empty($_SESSION['yhmaa']))}
+{$i=$_SESSION['yhmaa']}
+{/if}"/>
+			<b style="position: absolute;height: 24px;width:130px;right: 40px;top: 195px;background: #fcaf45;border-radius: 5px;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">{$msgyhm}</b>
 		</div>
 		
 		<div>
-			<span>密码</span><input type="password" id="psw1"/>
+			<span>密码</span><input type="password" id="psw1" name="password"/>
 		</div>
 		<div>
-			<span>确认密码</span><input type="password" id="psw2"/>
-			<b id="test2">两次输入密码不一致</b>
+			<span>确认密码</span><input type="password" id="psw2" name="topassword" />
+			<b style="position: absolute;display:none;height: 24px;width:130px;right: 40px;top: 282px;background: #fcaf45;border-radius: 5px;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">两次输入密码不一致</b>
 		</div>
 		
 		
@@ -128,8 +134,53 @@
 	var str1='';
 	var str2='';
 	var str3='';
+	var timer = null;
+	var num = 30;
+	
+$("#btn").attr({"disabled":"true"})
+
+$("input").eq(0).bind('input propertychange', function() {  
+    var aa = $("input").eq(0).val()
+    var reg = /^1[34578][0-9]{9}/;
+    if(!reg.test(aa)){
+    	$("b").eq(0).show()
+    	$("#btn").attr({"disabled":"true"})
+    }else{
+    	$("b").eq(0).hide()
+    	$("#btn").removeAttr("disabled")
+    }
+}); 	
+	
+
+$("#btn").click(function(){
+	setTimeout(function(){
+		var  str = $("input").eq(0).val()
+		var url = 'index.php?c=index&a=register_detail';
+		var xhr = new XMLHttpRequest();
+		xhr.open('post',url,true);
+		xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		xhr.send('aa='+ str);
+		console.log(str)
+	},1000)
+	
+	clearInterval(timer)
+	$(this).attr({"disabled":"true"})
+	timer = setInterval(function(){
+		num--;
+		if(num>0){
+			$("#btn").html(num +'S')
+			
+		}else{
+			$("#btn").html('重新发送')
+			$("#btn").removeAttr("disabled")
+		}
+	},1000)
+	return false;
+})
+
+
 $("#nichen").blur(function() {
-    	var str1 = $("#nichen").val()
+     str1 = $("#nichen").val()
         
     
 });
@@ -137,12 +188,20 @@ $("#nichen").focus(function(){
 	
 })
 $("#psw1").blur(function() {
-    	var str2 = $("#psw1").val()
+    str2 = $("#psw1").val()
         
     
 });
-$("#psw2").blur(function(){
-	var str3 = $("#psw1").val()
+$("#psw2").blur( function() {
+	str3 = $("#psw2").val()
+	
+	if(str3 != str2){
+		$("b").eq(2).show()
+		$("input").eq(5).attr({"disabled":"true"})
+	}else{
+		$("b").eq(2).hide()
+		$("input").eq(5).removeAttr("disabled")
+	}
 })
 </script>
 </html>

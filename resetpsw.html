@@ -58,19 +58,20 @@
 	<p style="text-indent: 106px;">重置密码</p>
 	<div>
 		<span>你的账号</span><input type="text" />
+		<b style="position: absolute;display:none;height: 24px;width:130px;right: 40px;top: 106px;background: #fcaf45;border-radius: 5px;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">手机号格式不正确</b>
 	</div>
 	<form action="" method="post">
 		<div>
 			<span>手机验证码</span>
 			<input type="text" />
-			<button id="btn">重新发送</button>
+			<button  id = "btn" style="position: absolute;height: 24px;border:0;width:130px;right: 40px;top: 149px;background: #fcaf45;border-radius: 5px;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">重新发送</button>
 		</div>
 		<div>
 			<span>密码</span><input type="password" id="psw1"/>
 		</div>
 		<div>
 			<span>确认密码</span><input type="password" id="psw2"/>
-			<b id="test3">两次输入密码不一致</b>
+			<b style="position: absolute;display:none;height: 24px;width:130px;right: 40px;top: 238px;background: #fcaf45;border-radius: 5px;font-size: 12px;font-weight: normal;text-align: center;line-height: 24px;font-family: "微软雅黑";">两次输入密码不一致</b>
 		</div>
 		<input type="submit" value="提交" style="width: 224px;height: 34px;background: #fcaf45;"/>
 	</form>
@@ -120,6 +121,21 @@
 <script>
 	var str2='';
 	var str3='';
+	var num = 30;
+$("#btn").attr({"disabled":"true"})
+$("input").eq(0).bind('input propertychange', function() {  
+    var aa = $("input").eq(0).val()
+    var reg = /^1[34578][0-9]{9}/;
+    if(!reg.test(aa)){
+    	$("b").eq(0).show()
+    	$("#btn").attr({"disabled":"true"})
+    }else{
+    	$("b").eq(0).hide()
+    	$("#btn").removeAttr("disabled")
+    }
+}); 
+
+
 $("#psw1").blur(function() {
     	var str2 = $("#psw1").val()
         
@@ -130,9 +146,18 @@ $("#psw2").blur(function(){
 })
 var timer = null;
 $("#btn").click(function(){
+	setTimeout(function(){
+		var  str = $("input").eq(0).val()
+		var url = 'index.php?c=index&a=register_detail';
+		var xhr = new XMLHttpRequest();
+		xhr.open('post',url,true);
+		xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		xhr.send('aa='+ str);
+		console.log(str)
+	},1000)
+	
 	clearInterval(timer)
 	$(this).attr({"disabled":"true"})
-	var num = 60;
 	timer = setInterval(function(){
 		num--;
 		if(num>0){
@@ -143,6 +168,7 @@ $("#btn").click(function(){
 			$("#btn").removeAttr("disabled")
 		}
 	},1000)
+	return false
 })
 </script>
 </html>

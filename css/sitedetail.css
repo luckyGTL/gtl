@@ -1,0 +1,83 @@
+#mainwrap{
+	width: 100%;
+	padding-top: 20px;
+	background: #f6f6f6;
+}
+
+#top{
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+	background: #00b7ee;
+	margin-bottom: 20px;
+}
+#recommend{
+	width: 1200px;
+	height: 480px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: #fff;
+}
+#releft{
+	float: left;
+    width: 550px;
+    height: 460px;
+    padding: 10px;
+    background: green;
+}
+#mainImg{
+	height: 365px;
+	margin-bottom: 5px;
+}
+#reright{
+	float: right;
+	width:545px ;
+	height: 385px;
+	padding: 30px 55px 65px 30px;
+	background: #ff0;
+}
+#tabImg li{
+	float: left;
+	margin-right: 5px;
+	overflow: hidden;
+}
+#reright h4{
+	height: 47px;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: "微软雅黑";
+}
+#reright p{
+	margin-bottom: 20px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+#reright p:last-of-type{
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 34px;
+}
+.tit{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	float: left;
+	margin-right: 20px;
+}
+#ruyuan{
+	float: left;
+	width: 80px;
+	height:24px ;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	line-height: 24px;
+	text-align: center;
+	background: #009cad;
+	color: #fff;
+}
+#recomment{
+	height: 40px;
+	padding: 25px 12px;
+	background: #fcf9ea;
+}
