@@ -85,18 +85,168 @@
 }
 #maintit h3 span{
 	display: inline-block;
-	height:32px;
+	height:58px;
+	line-height:40px;
 	width:84px;
 	float:left;
 	font-size:18px;
 	padding:0 10px 12px;
 	cursor:pointer;
 }
-#mianbox{
-	min-height:462px;
-	height:auto!important;
-	height:462px;
-	width:1180px;
-	padding:10px;
-	background:#fff;
+#maintit h3 .underline{
+	border-bottom:4px solid #07888d;
 }
+#maintit .tuijian{
+	margin-top:30px;
+	height:553px;
+	width:100%;
+	display:flex;
+	justify-content:space-between;	
+	overflow:hidden;
+}
+#maintit section{
+	width:597px;
+	height:100%;
+	background:blue;
+}
+#maintit section li img{
+	display:block;
+	border:0;
+	width:597px;
+	height:523px;
+}
+#maintit section .tit-text{
+	background:#fafafa;
+	height:30px;
+	line-height:30px;
+	display: flex;
+	justify-content:space-between;
+}
+section .tit-text p{
+	padding-left:20px;
+	color:#000;
+}
+section .tit-text span{
+	font-size:14px;
+	padding-right:40px;
+	color:#000;
+}
+section .tit-text span i{
+	font-size:16px;
+	font-style:normal;
+	color:#ff6600;
+	padding-right:4px;
+}
+#maintit aside{
+	width:597px;
+	height:100%;
+}
+#maintit aside ul{
+	width:597px;
+	height:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-content: space-between;
+}
+#maintit aside li{
+	width:295px;
+	height:270px;
+}
+#maintit aside li img{
+	display: block;
+	border: 0;
+	width:295px;
+	height:240px;
+}
+#maintit aside .tit-text{
+	background:#fafafa;
+	height:30px;
+	line-height:30px;
+	display: flex;
+	justify-content:space-between;
+}
+aside .tit-text p{
+	padding-left:20px;
+	color:#000;
+}
+aside .tit-text span{
+	font-size:14px;
+	padding-right:40px;
+	color:#000;
+}
+aside .tit-text span i{
+	font-size:16px;
+	font-style:normal;
+	color:#ff6600;
+	padding-right:4px;
+}
+/*--------------#mainbox---------------*/
+#mianbox{
+	min-height:600px;
+	height:auto!important;
+	height:600px;	
+	width:100%;
+	margin-top:50px;
+}
+#mianbox h2{
+	font-size:26px;
+	color:#000;
+	width:100%;
+	height:33px;
+	text-align: center;
+	line-height:33px;
+}
+#mianbox .clearfix{
+	margin-bottom:30px;
+}
+#mianbox h3{
+	width:600px;
+	height:57px;
+	margin:0 auto;
+	font-size:16px;
+	margin-top:25px;
+	text-align:center;
+	color:#000;
+	border-bottom:2px solid #ddd;
+}
+#mianbox h3 span{
+	display: inline-block;
+	height:58px;
+	line-height:40px;
+	width:84px;
+	font-size:18px;
+	padding:0 10px 12px;
+	cursor:pointer;
+}
+#mianbox h3 .underline{
+	border-bottom:4px solid #07888d;
+}
+#mianbox .topicTit{
+	height:500px;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:30px;
+	
+}
+#mianbox .topicTit section{
+	width:290px;
+	height:100%;
+	background:blue;
+}
+#mianbox .topicTit section img{
+	width:100%;
+	height:100%;
+}
+#mianbox .topicTit section .first{
+	margin:0;
+}
+#mianbox .topicTit aside{
+	width:897px;
+	height:100%;
+}
+#mianbox .topicTit aside li img{
+	width:100%;
+	height:100%;
+} 
