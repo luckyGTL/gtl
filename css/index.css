@@ -95,7 +95,7 @@
 	border:0;
 }*/
 /*------------------------------搜索框的--------------------*/
-.hotScenic{
+.hotScenic,.hotHotel{
 	display:none;
 	width:380px;
 	padding:10px;
@@ -202,7 +202,7 @@ a:hover{
 	float:right;
 }
 /*-----------------main2-----------*/
-#main2 #shanghai{
+#main2 #beijing,#main2 #beijing1,#main2 #beijing2,#main2 #beijing3,#main2 #beijing4{
 	display:none;
 }
 #main a:hover{
@@ -275,7 +275,7 @@ a:hover{
 	
 }
 /*-----------main3-------*/
-#main3 #dali{
+#main3 #dali,#main3 #dali1,#main3 #dali2,#main3 #dali3,#main3 #dali4{
 	display:none;
 }
 #main3 a{
@@ -342,39 +342,75 @@ a:hover{
 
 
 
-/*------------旅游指南--------*/
-#main .tit{
-	width:215px;
-	height:285px;
-	margin:10px 0;
-	text-indent:40px;
-	line-height:24px;
-	text-align: left;
+/*------------自驾游--------*/
+#main-drive #zjy2,#main-drive #zjy3{
+	display:none;
 }
-#main .tit li{
-	font-size: 14px;
-	font-family:"微软雅黑";
-	text-align: left;
-	
+#main-drive a{
+	color:black;
 }
-#main .tit .hover{
-	background:#5CB85C;
+#main-drive a:hover{
+	text-decoration:none;
+}
+#main-drive .pad{
+	padding-right:60px;
+}
+#main-drive .icon-zonghe{
+	width:25px;
+	height:25px;
+	background:url(../img/icon/zonghe.png) no-repeat;
+	overflow:hidden;
+	margin-right:10px;
+}
+#main-drive .on{
+	background:#69cce3;
 	color:#fff;
 }
-#main .lunbo{
-	width:899px;
-	height:285px;
-	margin:10px 0;
-	
+#main-drive span{
+	float:left;
+	cursor:pointer;
+	color:#606060;
+	padding:1px 10px;
+	margin:0 10px;
+	font-size:18px;
+	border-radius:10px;	
 }
-#main .lunbo .swiper-container{
+#main-drive ul{
+	display:block;
+	height:286px;
+	width:100%;
+	margin:15px 0;
+}
+#main-drive ul li{
+	float:left;
+	width:290px;
+	height:286px;
+	margin-right:10px;
+	overflow:hidden;
+	position:relative;
+}
+#main-drive ul li .pic-add{
+	width:100%;
+	height:252px;
+	overflow:hidden;
+}
+#main-drive ul li img{
+	display:block;
+	border:0;
 	width:100%;
 	height:100%;
+	position:relative;
+	bottom:0;
 }
-#main .lunbo .swiper-container img{
-	width:899px;
-	height:285px;
+#main-drive ul li .city{
+	position:absolute;
+	font-size:18px;
+	color:#fff;
+	top:210px;
+	left:0;
+	text-indent:15px;
 }
+
 /*----------底部的---------*/
 #main4{
 	width:1200px;

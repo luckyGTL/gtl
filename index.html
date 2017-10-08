@@ -15,15 +15,15 @@
 		 <div id="headerwrap">
 		 	<div id="header">
 		 		<div id="logo">
-		 			<h3 style="margin-top:0;"><img src="img/logo.png" height="100" /></h3>
+		 			<h3 style="margin-top:0;"><img src="img/logo1.png" height="100" /></h3>
 		 		</div>
 		 		<div id="info">
-		 			<div id="phone">
+		 			<!--<div id="phone">
 			 			<span>
 			 				<img src="img/icon/手机.png" alt="" />
 			 			</span>
 			 			<span>手机版</span>
-			 		</div>
+			 		</div>-->
 			 		<div id="tele">
 			 			<span>
 			 				<img src="img/icon/电话.png" alt="" width="16"/>
@@ -67,8 +67,8 @@
 		    </div>
 		    <!-- 如果需要分页器 -->
 		    <div class="swiper-pagination"></div> 
-		    <div class="swiper-button-prev"></div>
-    		<div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev swiper-button-white"></div>
+    		<div class="swiper-button-next swiper-button-white"></div>
 		 </div>
 		 <!--选项卡-->	 
 		 <div class="host-detail">
@@ -105,6 +105,21 @@
             		<a href="#">三亚</a>
             	</div>
             </div>
+             <!--酒店热门-->
+            <div class="hotHotel">
+            	<div class="hotCity">
+            		<span>热门酒店</span>
+            	</div>
+            	<div class="cityLists">
+            		<a href="#" class="hover">如家</a>
+            		<a href="#">如家</a>
+            		<a href="#">如家</a>
+            		<a href="#">如家</a>
+            		<a href="#">如家</a>
+            		<a href="#">如家</a>
+            		<a href="#">如家</a>
+            	</div>
+            </div>
 	    </div>
 		 <div id="mainwrap">
 		 	<!--手风琴-->
@@ -114,38 +129,38 @@
 						<li>
 							<a href="hotel.html" target="_blank">
 								<div class="des"><h4>园林酒店</h4></div>
-								<div style="background: url(img/1.jpg) center;"></div>
+								<div style="background: url(img/ch01.jpg) center;"></div>
 							</a>
 							
 						</li>
 						<li>
 							<a href="hotel.html" target="_blank">
 								<div class="des"><h4>设计师酒店</h4></div>
-								<div style="background: url(img/2.jpg) center;"></div>
+								<div style="background: url(img/ps.jpg) center;"></div>
 							</a>
 						</li>
 						<li>
 							<a href="hotel.html" target="_blank">
 								<div class="des"><h4>青年旅社</h4></div>
-								<div style="background: url(img/3.jpg) center;"></div>
+								<div style="background: url(img/gc.jpg) center;"></div>
 							</a>
 						</li>
 						<li>
 							<a href="hotel.html" target="_blank">
 								<div class="des"><h4>特色客栈</h4></div>
-								<div style="background: url(img/4.jpg) center;"></div>
+								<div style="background: url(img/luying.jpg) center;"></div>
 							</a>
 						</li>
 						<li>
 							<a href="hotel.html" target="_blank">
 								<div class="des"><h4>海岛酒店</h4></div>
-								<div style="background: url(img/5.jpg) center;"></div>
+								<div style="background: url(img/ps0.jpg) center;"></div>
 							</a>
 						</li>
 						<li>
 							<a href="hotel.html" target="_blank">
 								<div class="des"><h4>海外温泉</h4></div>
-								<div style="background: url(img/6.jpg) center;"></div>
+								<div style="background: url(img/tx01.jpg) center;"></div>
 							</a>
 						</li>
 					</ul>
@@ -157,6 +172,8 @@
 		 				<a href="#" class="left pad"><i class="left icon-hot"></i>热门</a>
 		 				<span class="on">三亚</span>
 		 				<span>大理</span>
+		 				<span>丽江</span>
+		 				<span>张家界</span>
 		 				<span>丽江</span>
 		 				<span>张家界</span>
 		 			</h3>
@@ -217,6 +234,30 @@
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
+		 							<img src="img/dali3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="beijing1">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali1.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="beijing2">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
 		 							<img src="img/dali2.jpg" alt="三亚" />
 		 						</div>
 		 						<div class="city">大理</div>
@@ -224,6 +265,8 @@
 		 					<div class="tit-text">
 		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
 		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="beijing3">
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
@@ -234,16 +277,17 @@
 		 					<div class="tit-text">
 		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
 		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="beijing4">
 		 				<li>
 		 					<a href="#" target="_blank">
 		 						<div class="pic-add">
-		 							<img src="img/zhangjiajie2.jpg" alt="三亚" />
+		 							<img src="img/dali1.jpg" alt="三亚" />
 		 						</div>
 		 						<div class="city">大理</div>
 		 					</a>
 		 					<div class="tit-text">
-		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p>
-		 					</div>
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
 		 				</li>
 		 			</ul>
 		 		</div>
@@ -253,6 +297,8 @@
 		 				<a href="#" class="left pad"><i class="left icon-zonghe"></i>综合</a>
 		 				<span class="on">三亚</span>
 		 				<span>大理</span>
+		 				<span>丽江</span>
+		 				<span>张家界</span>
 		 				<span>丽江</span>
 		 				<span>张家界</span>
 		 			</h3>
@@ -342,31 +388,103 @@
 		 					</div>
 		 				</li>
 		 			</ul>
+		 			<ul class="tab-theme" id="dali1">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="dali2">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/sanya1.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="dali3">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/sanya3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="dali4">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
 		 		</div>
-		 		<h2><a href="#">旅游指南</a></h2>
-		 		<div class="left tit">
-		 			<h3>当季推荐</h3>
-		 			<li class="hover">桂林:山涧奇特，魅力奇观</li>
-		 			<li>桂林:山涧奇特，魅力奇观</li>
-		 			<li>桂林:山涧奇特，魅力奇观</li>
-		 			<li>桂林:山涧奇特，魅力奇观</li>
+		 		<!----------自驾游------->
+		 		<div id="main-drive">
+		 			<h2><a href="#">自驾游</a></h2>
+			 		<h3 class="clearfix">
+		 				<a href="#" class="left pad"><i class="left icon-hot"></i>推荐</a>
+		 				<span class="on">三亚</span>
+		 				<span>大理</span>
+		 				<span>丽江</span>
+		 			</h3>
+		 			<ul class="tab-theme" id="zjy1">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/dali1.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
+		 			<ul class="tab-theme" id="zjy2">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 				
+		 			</ul>
+		 			<ul class="tab-theme" id="zjy3">
+		 				<li>
+		 					<a href="#" target="_blank">
+		 						<div class="pic-add">
+		 							<img src="img/zhangjiajie3.jpg" alt="三亚" />
+		 						</div>
+		 						<div class="city">大理</div>
+		 					</a>
+		 					<div class="tit-text">
+		 						<p>烂漫的邂逅  阳光午后,海边遇见他(她)</p></div>
+		 				</li>
+		 			</ul>
 		 		</div>
-		 		<div class="right lunbo">
-		 			<div class="swiper-container lunbo-box">
-					    <div class="swiper-wrapper">
-					    	<div class="swiper-slide"><img src="img/zhangjiajie1.jpg"/></div>
-					        <div class="swiper-slide"><img src="img/zhangjiajie3.jpg"/></div>
-					        <div class="swiper-slide"><img src="img/zhangjiajie2.jpg"/></div>
-					        <div class="swiper-slide"><img src="img/sanya2.jpg"/></div>
-					    </div>
-					    <!-- 如果需要分页器 -->
-					    <div class="swiper-pagination"></div>
-					    
-					    <div class="swiper-button-prev"></div>
-    					<div class="swiper-button-next"></div>
-					 </div>
-		 		</div>
-		 		
+	 			
 		 	</div>
 		 	<div id="main4">
 		 			<div class="service-detail">
@@ -436,10 +554,8 @@
 		 </div>
 		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
-		
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
-	
 	<script>         
 	  var mySwiper = new Swiper('.swiper-container',{
 	  	autoplay:3000,

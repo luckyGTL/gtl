@@ -3,7 +3,7 @@
 }
 #headerwrap{
 	height: 100px;
-	background: #fff;
+	background:url(../img/top01.jpg) no-repeat -180px top;
 }
 #header{
 	width: 1200px;
@@ -11,6 +11,7 @@
 	margin: 0 auto;
 }
 #logo{
+	
 	float: left;
 }
 #logo a:hover{
@@ -148,7 +149,7 @@
 	line-height: 60px;
 	font-size: 20px;
 	font-family: "微软雅黑";
-	color: #000;
+	color: #fff;
 }
 #list a:hover{
 	background: #00878a;
@@ -257,7 +258,7 @@
 	color: #fff;
 }
 #login :first-child{
-	border-right:1px solid #000;
+	border-right:1px solid #fff;
 }
 #tuichu{
 	position:absolute ;

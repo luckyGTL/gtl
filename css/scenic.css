@@ -1,0 +1,102 @@
+/*--------轮播图---------*/
+#scenic-banner{
+	position:relative;
+}
+#scenic-banner .swiper-container{
+	width:100%;
+	height:630px;
+	overflow:hidden;	
+}
+#scenic-banner .swiper-container img{
+	display:block;
+	border:0;
+	width:100%;
+	height:100%;
+}
+.scenic-search{
+	width:700px;
+	height:82px;
+	margin:0 auto; 
+	border-radius:5px;
+	padding-top:28px;
+	position:absolute;
+	bottom:150px;
+	left:50%;
+	margin-left:-350px;
+	z-index:200;
+	
+}
+.scenic-search .jiudian{
+	float:left;
+	border:0;
+	width:503px;
+	height:60px;
+	background:#fff;
+	border-radius:5px;
+	padding-left:10px;
+	margin-left:60px;
+}
+.scenic-search .search{
+	float:left;
+	width:60px;
+	height:60px;
+	background:#ff9d00;
+	border-radius:5px;
+	margin-left:15px;
+}
+.scenic-search .search i{
+	display:block;
+	width:40px;
+	height:40px;
+	margin:10px auto;
+	background:url(../img/icon/sousuo.png) no-repeat center center/cover;
+}
+/*----------------main----------*/
+#mainwrap{
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+}
+#main{
+	min-height:500px;
+	height:auto!important;
+	height:500px;
+	width:1200px;
+	margin:0 auto;
+}
+#maintit h2{
+	font-size:26px;
+	color:#000;
+	width:100%;
+	height:33px;
+	text-align: center;
+	line-height:33px;
+	margin-top:50px;
+}
+#maintit h3{
+	width:600px;
+	height:57px;
+	margin:0 auto;
+	font-size:16px;
+	margin-top:25px;
+	text-align:center;
+	color:#000;
+	border-bottom:2px solid #ddd;
+}
+#maintit h3 span{
+	display: inline-block;
+	height:32px;
+	width:84px;
+	float:left;
+	font-size:18px;
+	padding:0 10px 12px;
+	cursor:pointer;
+}
+#mianbox{
+	min-height:462px;
+	height:auto!important;
+	height:462px;
+	width:1180px;
+	padding:10px;
+	background:#fff;
+}

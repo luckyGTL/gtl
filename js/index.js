@@ -1,11 +1,18 @@
 /*景点*/
 $(function(){
 	/*--------------搜索框------------*/
-	$(".box input").on("focus",function(){
+	$("#Section1 input").on("focus",function(){
 		$(".hotScenic").slideDown(300);
 	})
 	$("input").on("blur",function(){
 		$(".hotScenic").slideUp(300);
+	})
+	
+	$("#Section2 input").on("focus",function(){
+		$(".hotHotel").slideDown(300);
+	})
+	$("input").on("blur",function(){
+		$(".hotHotel").slideUp(300);
 	})
 	/*-------------搜索框的景点--------------*/
 	$(".cityLists a").hover(function(){
@@ -31,29 +38,64 @@ $(function(){
 		var i = $(this).index();
 		console.log(i)
 		switch (i-1){
-				case 0: {
-					$('#beijing').css('display','block');
-					$('#shanghai').css('display','none');
-					
-				};
-					break;
-				case 1: {
-					$('#beijing').css('display','none');
-					$('#shanghai').css('display','block');
-				}
-					break;
-				case 2: {
-					$('#beijing').css('display','block');
-					$('#shanghai').css('display','none');
-					
-				};
-					break;
-				case 3: {
-					$('#beijing').css('display','none');
-					$('#shanghai').css('display','block');
-				}
-					break;
+			case 0: {
+				$('#shanghai').css('display','block');
+				$('#beijing').css('display','none');
+				$('#beijing1').css('display','none');
+				$('#beijing2').css('display','none');
+				$('#beijing3').css('display','none');
+				$('#beijing4').css('display','none');
+				break;
 			}
+			case 1: {
+				$('#shanghai').css('display','none');
+				$('#beijing').css('display','block');
+				$('#beijing1').css('display','none');
+				$('#beijing2').css('display','none');
+				$('#beijing3').css('display','none');
+				$('#beijing4').css('display','none');
+				
+			}
+				break;
+			case 2: {
+				$('#shanghai').css('display','none');
+				$('#beijing').css('display','none');
+				$('#beijing1').css('display','block');
+				$('#beijing2').css('display','none');
+				$('#beijing3').css('display','none');
+				$('#beijing4').css('display','none');
+				
+				
+			};
+				break;
+			case 3: {
+				$('#shanghai').css('display','none');
+				$('#beijing').css('display','none');
+				$('#beijing1').css('display','none');
+				$('#beijing2').css('display','block');
+				$('#beijing3').css('display','none');
+				$('#beijing4').css('display','none');
+			}
+				break;
+			case 4: {
+				$('#shanghai').css('display','none');
+				$('#beijing').css('display','none');
+				$('#beijing1').css('display','none');
+				$('#beijing2').css('display','none');
+				$('#beijing3').css('display','block');
+				$('#beijing4').css('display','none');
+			}
+				break;
+			case 5: {
+				$('#shanghai').css('display','none');
+				$('#beijing').css('display','none');
+				$('#beijing1').css('display','none');
+				$('#beijing2').css('display','none');
+				$('#beijing3').css('display','none');
+				$('#beijing4').css('display','block');
+			}
+				break;
+		}
 	})
 
 /*-------------热门-----------*/
@@ -70,28 +112,97 @@ $(function(){
 				case 0: {
 					$('#sanya').css('display','block');
 					$('#dali').css('display','none');
-					
-				};
+					$('#dali1').css('display','none');
+					$('#dali2').css('display','none');
+					$('#dali3').css('display','none');
+					$('#dali4').css('display','none');
 					break;
+				}
 				case 1: {
 					$('#sanya').css('display','none');
 					$('#dali').css('display','block');
+					$('#dali1').css('display','none');
+					$('#dali2').css('display','none');
+					$('#dali3').css('display','none');
+					$('#dali4').css('display','none');
+					
 				}
 					break;
 				case 2: {
-					$('#sanya').css('display','block');
+					$('#sanya').css('display','none');
 					$('#dali').css('display','none');
+					$('#dali1').css('display','block');
+					$('#dali2').css('display','none');
+					$('#dali3').css('display','none');
+					$('#dali4').css('display','none');
+					
 					
 				};
 					break;
 				case 3: {
 					$('#sanya').css('display','none');
-					$('#dali').css('display','block');
+					$('#dali').css('display','none');
+					$('#dali1').css('display','none');
+					$('#dali2').css('display','block');
+					$('#dali3').css('display','none');
+					$('#dali4').css('display','none');
+				}
+					break;
+				case 4: {
+					$('#sanya').css('display','none');
+					$('#dali').css('display','none');
+					$('#dali1').css('display','none');
+					$('#dali2').css('display','none');
+					$('#dali3').css('display','block');
+					$('#dali4').css('display','none');
+				}
+					break;
+				case 5: {
+					$('#sanya').css('display','none');
+					$('#dali').css('display','none');
+					$('#dali1').css('display','none');
+					$('#dali2').css('display','none');
+					$('#dali3').css('display','none');
+					$('#dali4').css('display','block');
 				}
 					break;
 			}
 	})
+/*----------------自驾游--------------*/
+$("#main-drive span").click(function(){
+		$(this).addClass("on").siblings().removeClass("on")
+	})
 
+
+	$("#main-drive h3 span").click(function(){
+		var i = $(this).index();
+		console.log(i)
+		switch (i-1){
+				case 0: {
+					$('#zjy1').css('display','block');
+					$('#zjy2').css('display','none');
+					$('#zjy3').css('display','none');
+					break;
+				}
+				case 1: {
+					$('#zjy1').css('display','none');
+					$('#zjy2').css('display','block');
+					$('#zjy3').css('display','none');
+					
+					
+				}
+					break;
+				case 2: {
+					$('#zjy1').css('display','none');
+					$('#zjy2').css('display','none');
+					$('#zjy3').css('display','block');
+					
+					
+					
+				};
+					break;
+			}
+	})
 
 
 
