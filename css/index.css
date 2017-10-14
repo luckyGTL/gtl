@@ -258,6 +258,9 @@ a:hover{
 	position:relative;
 	bottom:0;
 }
+#main img:hover{
+	opacity:0.4;
+}
 #main2 ul li .city{
 	position:absolute;
 	font-size:18px;

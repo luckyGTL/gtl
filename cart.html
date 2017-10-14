@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/cart.css" />
+<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+
+<title></title>
+</head>
+<body>
+ <div id="headerwrap">
+<div id="header">
+	<div id="logo">
+		<h3><img src="img/logo.png" height="100" /></h3>
+	</div>
+	<div id="info">
+		<div id="phone">
+ 			<span>
+ 				<img src="img/icon/shouji.png" alt="" />
+ 			</span>
+ 			<span>手机版</span>
+ 		</div>
+ 		<div id="tele">
+ 			<span>
+ 				<img src="img/icon/dianhua.png" alt="" width="16"/>
+ 			</span>
+ 			<span>客服热线：4009-333-666</span>
+ 		</div>
+ 		<div id="user">
+ 			<span>
+ 				<img src="img/icon/个人.png" alt="" />
+ 			</span>
+ 			<span>大魔王666</span>
+ 		</div>
+	</div>
+	
+</div>
+ </div>
+ <div id="navwrap">
+<div id="nav">
+	<ul id="list">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">景点</a></li>
+		<li><a href="#">酒店</a></li>
+		<li><a href="#">自驾游</a></li>
+		<li><a href="#">优惠活动</a></li>
+	</ul>
+	<div id="login" >
+		<a href="#">登录</a><a href="#">注册</a>
+	</div>
+	<div id="tuichu" style="display: none;">
+		<span>退出登录</span>
+	</div>
+</div>
+ </div>
+ 
+ 
+ <div id="mainwrap" >
+	<div id="main">
+		<div class="cart-content-wrap">
+			<h2>购物车列表</h2>
+			<div class="cart-content">
+				<table class="cart-table">
+					<thead>
+						<tr>
+							<th style="display: none;">
+								<p>选择</p>
+							</th>
+							<th>商品</th>
+							<th>商品信息</th>
+							<th>单价(元)</th>
+							<th>数量</th>
+							<th>小计(元)</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--购物车主要内容-->
+						<tr class="cart-goods-orders">
+							<td style="display:none">
+								<input type="checkbox" class="cart-goods-select" />
+							</td>
+							<td>
+								<a href="#">
+									<img class="cart-goods-img" src="img/29942_banner.jpg"/>
+								</a>
+								<a href="#" class="cart-goods-title">敦煌影视古城景点票 </a>
+							</td>
+							<td>
+								<p>成人票</p>
+							</td>
+							<td>
+								<p class="cart-goods-price">70.00</p>
+							</td>
+							<td>
+								<div class="cart-goods-num">
+									<span class="cart-num-reduce"></span>
+									<input type="text" value="1" class="cart-num-show" />
+									<span class="cart-num-add"></span>
+								</div>
+							</td>
+							<td>
+								<p class="cart-goods-prices">70.00</p>
+							</td>
+							<!--删除操作-->
+							<td>
+								<a href="#" class="delete-order">删除</a>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<div class="cart-totle">
+					<div class="cart-totle-left" style="display: none;">
+						<input type="checkbox" id="cart-goods-all" />
+						<label for="cart-goods-all">全选</label>
+						<a class="delete-all-order" href="javascript:;">删除</a>
+					</div>
+					<div class="cart-totle-right">
+						<p>
+							总计 :￥ 
+							<span class="cart-totle-price">0.00</span>
+						</p>
+						<a href="zhifu.html" class="cart-pay-btn">去付款</a>
+					</div>
+				</div>
+			</div>
+		
+		
+	</div>
+ </div>
+ <div id="footerwrap">
+ 	<div id="footer">
+ 		<p id="links">
+ 			<a href="">关于我们</a>
+ 			<a href="">专业团队</a>
+ 			<a href="">联系我们</a>
+ 			<a href="">用户协议</a>
+ 			<a href="">隐私声明</a>
+ 		</p>
+ 		<div id="partner">
+ 			<div id="parleft">
+ 				<div id="tit">合作伙伴:</div>
+ 				<ul id="pic">
+ 					<img src="img/pic.jpg" alt="" />
+ 				</ul>
+ 			</div>
+ 			<div class="parright">
+ 				<h5>微信公众号</h5>
+ 				<img src="img/code.jpg" alt="" />
+ 			</div>
+ 			<div class="parright ">
+ 				<h5>微博</h5>
+ 				<img src="img/code.jpg" alt="" />
+ 			</div>
+ 		</div>
+ 		<p id="youqing">
+ 			友情链接:&nbsp;
+ 			<a href="">穷游网</a>
+ 			<a href="">途牛旅游网</a>
+ 			<a href="">艺龙旅游指南</a>
+ 			<a href="">驴妈妈旅游网</a>
+ 			<a href="">携程攻略社区</a>
+ 			<a href="">同城旅游</a>
+ 			<a href="">天气预报15天查询</a>
+ 		</p>
+ 		<p id="beian">Copyright ©2017 Qunar.com  京公网安备110108901530  京ICP备05021087号  营业执照信息  保险经纪资质(京)-非经营性-2016-0110</p>
+ 	</div>
+ </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+<script>
+	$("#username").blur(function() {
+    	var str = $("#username").val()
+        var reg = /^1[34578][0-9]{9}/;
+    	var reg1 = /[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}/;
+    	 if(!reg.test(str)&&!reg1.test(str)){
+	        $(".test").show()
+      }
+	});
+	$("#username").focus(function(){
+		$(".test").hide()
+	})
+</script>
+
+</html>
