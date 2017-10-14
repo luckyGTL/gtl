@@ -8,8 +8,9 @@
 	width: 1200px;
 	height: 120px;
 	margin: 0 auto;
-	background: #00b7ee;
+	
 	margin-bottom: 20px;
+	background: url(../img/banner001.png) no-repeat left top;
 }
 #recommend{
 	width: 1200px;
@@ -23,7 +24,7 @@
     width: 550px;
     height: 460px;
     padding: 10px;
-    background: green;
+    
 }
 #mainImg{
 	height: 365px;
@@ -34,7 +35,7 @@
 	width:545px ;
 	height: 385px;
 	padding: 30px 55px 65px 30px;
-	background: #ff0;
+	
 }
 #tabImg li{
 	float: left;
@@ -80,4 +81,84 @@
 	height: 40px;
 	padding: 25px 12px;
 	background: #fcf9ea;
+}
+#introleft{
+	width: 960px;
+	float: left;
+}
+#introtop{
+	height: 45px;
+	background: #76818b;
+}
+#introtop a{
+	float: left;
+	width: 160px;
+	font-size: 20px;
+	line-height: 45px;
+	color: #fff;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+#introright{
+	width: 220px;
+	float: right;
+}
+.introtit{
+	height: 58px;
+	padding: 14px 20px 0 62px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #50b400;
+}
+#yuding{
+	padding: 0 20px 0 62px;
+}
+#jingdian{
+	padding: 0 98px 0 62px;
+}
+.pic{
+	width: 800px;
+	height: 475px;
+	background: #ff0;
+	margin-bottom: 15px;
+}
+.jingdiantxt{
+	line-height: 24px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+#dianping{
+	padding: 0 98px 0 60px;
+}
+#dianping li{
+	height: 92px;
+	padding-top: 28px;
+	border-bottom: 1px solid #E1E1E1;
+}
+#dianping li p span{
+	display: block;
+	float: left;
+	line-height: 32px;
+	font-size: 14px;
+	font-family:"微软雅黑"
+}
+#introrightt{
+	height: 45px;
+	background: #76818b;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #fff;
+	line-height: 45px;
+}
+dt{
+	height: 150px;
+	background: #ff0;
+}
+dd{
+	height: 50px;
+}
+.active{
+	background: #fff;
+	
 }

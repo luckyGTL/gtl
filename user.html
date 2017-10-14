@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/common.css" />
@@ -56,147 +56,192 @@
  <div id="mainwrap">
  	<div id="main">
  		<ul id="tabs">
- 			<li class="li_active">我的订单</li>
- 			<li id="pbtn">个人中心<span class="triangle" style="float: right;margin-top: 25px;" id="btn1"></span>
- 			</li>
- 			<li class="sub-li" style="display:none;height: 30px;font-size: 14px;line-height: 30px;">我的信息</li>
- 			<li class="sub-li" style="display:none;height: 30px;font-size: 14px;line-height: 30px;">账户安全</li>
- 			<li class="li_active">我的收藏</li>
+ 			<li >我的订单</li>
+ 			<li>账号管理</li>
+ 			<li >我的收藏</li>
  		</ul>
- 		<div id="detail">
- 			<div id="myorder" style="display: none;">
- 				<div id="options1">         
- 					<span>全部订单</span>
- 					<span>未出行</span>
- 					<span>待付款</span>
- 					<span>待评价</span>
+ 		<ul id="detail">
+ 			<li >
+ 				<table class="cart-table" width="100%">
+					<thead>
+						<tr>
+							<th height="40px" style="text-align: center;">
+								订单编号
+							</th>
+							<th style="text-align: center;">商品</th>
+							<th>商品信息</th>
+							<th>付款时间</th>
+							<th>小计(元)</th>
+							<th>操作</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cart-goods-orders" style="height: 120px;">
+							<td>
+								20171014112233
+							</td>
+							<td >
+								<a href="#" style="float: left;">
+									<img class="cart-goods-img" src="img/1.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-right: 10px;"/>
+								</a>
+								<a href="#" class="cart-goods-title" style="float: left; line-height: 120px;"> 2017 春夏新款爱心印花百搭短袖T恤女 </a>
+							</td>
+							<td>
+								<p>颜色 : 白色</p>
+								<p>尺码 : 均码</p>
+							</td>
+							<td>
+								20174343434343
+							</td>
+							<td>
+								<p class="cart-goods-prices">70.00</p>
+							</td>
+							<td>
+								<a href="#" class="delete-order">删除</a>
+							</td>
+						</tr>
+					</tbody>
+ 				</table>
+ 			</li>
+ 			<li>
+ 				<!--
+                 	
+                 	描述：个人
+                 -->
+ 				<div id="geren" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">个人资料</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form1">
+ 						 <div><span>昵称</span><input type="text" class="nichen"/></div>
+ 						 <div>
+ 						 	<span>性别</span>
+							<input  class="sexs"   name='sex' type="radio" value="1"/>男
+							<input  class="sexs"   name='sex' type="radio" value="2"/>女
+							<input  class="sexs"   name='sex' type="radio" value="3"/>保密
+ 						 </div>
+ 						<div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
  				</div>
- 				<div id="options2">
- 					<ul >
- 						<li><input type="checkbox"  />&nbsp;全选</li>
- 						<li>
- 							类型 <span class="triangle" style="display:inline-block;margin-top: 12px;" id="btn2"></span>
- 							<div  style="display: none;" id="pfenlei">
- 								<div class="fenlei">酒店</div>
- 								<div class="fenlei">景点</div>
- 							</div>
- 						</li>
- 						<li>旅客</li>
- 						<li>行程</li>
- 						<li>金额</li>
- 						<li>
- 							订单状态 <span class="triangle" style="display:inline-block;margin-top: 12px;" id="btn3"></span>
- 							<div style="display: none;" id="pstate">
- 								<div class="state">待付款</div>
- 								<div class="state">待评价</div>
- 								<div class="state">未出行</div>
- 							</div>
- 						</li>
- 						<li>操作</li>
- 					</ul>
+ 				<!--
+                 	头像
+                 -->
+ 				<div id="touxiang" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">头像</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form2">
+ 						 <div><input type="file" /></div>
+ 						 <div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
  				</div>
- 				<div id="options3">
- 					<p>
- 						<span><input type="checkbox"  />&nbsp;订单号:<b >4532323232</b></span>
- 						<span>预定日期:<b>2017-03-03</b></span>
- 					</p>
+ 				
+ 				<!--
+                 
+                 	描述：邮箱
+                 -->
+ 				<div id="youxiang" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">邮箱</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form3">
+ 						 <div><span>更改邮箱</span><input type="text" /></div>
+ 						 <div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
  				</div>
- 				<ul id="options4">
- 					<li>
- 						<span>南京港际大酒店</span>
- 						<span>酒店</span>
- 						<span>张三</span>
- 						<span>2017-10-04</span>
- 						<span style="color: #e56700;">￥ 208</span>
- 						<span>未提交</span>
- 						<span><button style="border-radius: 3px;border: 0;background-color: #69cce3;color: #fff;">继续提交</button></span>
- 					</li>
- 				</ul>
- 				<div id="options5">
- 					<span>
- 						<b style="display:block;width: 0;height: 0;border-right: 6px solid #000;border-top: 6px solid transparent;border-bottom: 6px solid transparent;margin-top: 3px;margin-left: 6px;"></b>
- 					</span>
- 					<span>1</span>
- 					<span>
- 						下一页
- 						<b style="display:block;float:right;width: 0;height: 0;border-left: 6px solid #000;border-top: 6px solid transparent;border-bottom: 6px solid transparent;margin-top: 3px;margin-left: 6px;"></b>
- 					</span>
- 					<span>确定</span>
+ 				
+ 				<!--
+                 	作者：dellxht2017@163.com
+                 	时间：2017-10-14
+                 	描述：4
+                 -->
+ 				<div id="y4" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">11</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form4">
+ 						 <div><span>11</span><input type="text" /></div>
+ 						 <div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
  				</div>
- 			</div>
- 			<div id="infos" style="display: none;">
- 				<div id="userinfo">
- 					<p>个人信息设置 <span class="edit edits"><span>编辑</span><span>+</span><span></p>
- 					<div id="infodetails" style="display: none;">
-						<form action="" method="post">
-							<div>
-								<span class="info1">手机</span><span id="infotele">12343233234</span><button id="infobtn1">修改</button>
-							</div>
-	 						<div>
-	 							<span class="info1">邮箱</span><span id="infoemail">未设置</span><button id="infobtn2">验证</button>
-	 						</div>
-	 						<div>
-	 							<span class="info1">昵称</span><input type="text" />
-	 						</div>
-	 						<div>
-	 							<span class="info1">姓名</span><input type="text" />
-	 						</div>
-	 						<div>
-	 							<span class="info1" >性别</span><input type="checkbox" name="sex">&nbsp;男
-	 								<input type="checkbox" name="sex">&nbsp;女
-	 						</div>
-							<input type="submit" value="保存" id="infobtn3"/>
-						</form>
- 					</div>
+ 				
+ 				<!--
+                 	作者：dellxht2017@163.com
+                 	时间：2017-10-14
+                 	描述：5
+                 -->
+                 <div id="y5" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">22</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form5">
+ 						 <div><span>22</span><input type="text" /></div>
+ 						 <div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
  				</div>
- 				<div id="userimg">
- 					<p style="margin-top: 20px;">头像设置 <span class="edit1 edits"><span>编辑</span><span>+</span><span></p>
- 					<div id="setImg" style="display: none;">
- 						<div id="img1">
- 							
- 						</div>
- 					</div>
+ 				
+ 				<!--
+                 	作者：dellxht2017@163.com
+                 	时间：2017-10-14
+                 	描述：6
+                 -->
+                 <div id="y6" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">33</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form6">
+ 						 <div><span>33</span><input type="text" /></div>
+ 						 <div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
  				</div>
- 			</div>
- 		
- 		     <div id="safe">
- 		     	 <div id="safepsw">
- 		     	 	<p><span>修改登录密码</span> <span class="edit2 edits"><span>编辑</span><span>+</span><span></p>
- 		     	 	<div id="subpsw" style="display: none;">
- 		     	 		<form action="" method="post">
- 		     	 			<div style="margin-bottom: 20px;">
-	 		     	 			<span class="tele1">当前密码</span><input type="password" />
-	 		     	 		</div>
-	 		     	 		<div style="margin-bottom: 10px;">
-	 		     	 			<span class="tele1">新密码</span><input type="password" />
-	 		     	 		</div>
-	 		     	 		<div style="margin-bottom: 15px;padding-left: 75px;overflow: hidden;">
-	 		     	 			<span class="tele2">弱</span><span class="tele2">中</span><span class="tele2">强</span>
-	 		     	 		</div>
-	 		     	 		<div style="margin-bottom: 25px;">
-	 		     	 			<span class="tele1">确认密码</span><input type="password" />
-	 		     	 		</div>
- 		     	 			<input type="submit" value="保存" id="tele3"/>
- 		     	 		</form>
- 		     	 	</div>
- 		     	 </div>
- 		     	 <div id="safeemail" style="margin-top: 20px;">
- 		     	 	<p><span>邮箱验证</span> <span class="edit3 edits"><span>编辑</span><span>+</span><span></p>
- 		     	 	<div id="subemail">
- 		     	 		<form action="" method="post">
- 		     	 			<div style="overflow: hidden;">
-	 		     	 			<span class="email1">邮箱地址</span><input type="text" />
-	 		     	 		</div>
- 		     	 			<input type="submit" value="确认" id="email2"/>请在24小时内至您的查收验证邮件
- 		     	 		</form>	
- 		     	 	</div>
- 		     	 </div>
- 		     	 <div id="safetele" style="margin-top: 20px;">
- 		     	 	<p><span>手机验证</span><span class="edit4 edits"><span>编辑</span><span>+</span><span></p>
- 		     	 
- 		     	 </div>
- 		     </div>
- 		</div>
+ 				<!--
+                 	作者：dellxht2017@163.com
+                 	时间：2017-10-14
+                 	描述：7
+                 -->
+                 <div id="y7" class="aa">
+ 					<div class="div1"><span style="margin-left: 20px;">44</span><span style="margin-right: 20px;" class="toggle">修改</span></div>
+ 					<form action="" method="post" id="form7">
+ 						 <div><span>44</span><input type="text" /></div>
+ 						 <div class="last"><input type="submit" value="提交"/></div>
+ 					</form>
+ 				</div>
+ 				
+ 			</li>
+ 			<li >
+ 				<table class="cart-table" width="100%">
+					<thead>
+						<tr>
+							<th height="40px" style="text-align: center;">
+								订单编号
+							</th>
+							<th style="text-align: center;">商品</th>
+							<th>商品信息</th>
+							<th>付款时间</th>
+							<th>小计(元)</th>
+							<th>操作</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cart-goods-orders" style="height: 120px;">
+							<td>
+								20171014112233
+							</td>
+							<td >
+								<a href="#" style="float: left;">
+									<img class="cart-goods-img" src="img/1.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-right: 10px;"/>
+								</a>
+								<a href="#" class="cart-goods-title" style="float: left; line-height: 120px;"> 2017 春夏新款爱心印花百搭短袖T恤女 </a>
+							</td>
+							<td>
+								<p>颜色 : 白色</p>
+								<p>尺码 : 均码</p>
+							</td>
+							<td>
+								20174343434343
+							</td>
+							<td>
+								<p class="cart-goods-prices">70.00</p>
+							</td>
+							<td>
+								<a href="#" class="delete-order">删除</a>
+							</td>
+						</tr>
+					</tbody>
+ 				</table>
+ 			</li>
+ 			
+ 		</ul>
  	</div>
  </div>
  <div id="footerwrap">
@@ -240,92 +285,46 @@
 </body>
 <script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
 <script>
-	var btn = true
-	$("#tabs li").click(function(){
-		$(this).addClass("lis_active").css({"border-left":"5px solid #009944","background":"#fff","color":"#7cd2e6"}).siblings()
-		.removeClass("lis_active").css({"border-left":"5px solid #f7f7f7","background":"#f7f7f7","color":"#000"})
-		if($(this).index() ==1){
-			    if(btn ==true){
-			    	
-				$("#btn1").removeClass("triangle").addClass("triangle_active")
-				$(".sub-li").show()
-				btn = false;
-				}else{
-					$("#btn1").addClass("triangle").removeClass("triangle_active")
-					$(".sub-li").hide()
-					$(this).css({"border-left":"5px solid #f7f7f7","background":"#f7f7f7","color":"#000"})
-					btn = true;
-				}
-			
-		}else{
-			$("#btn1").addClass("triangle").removeClass("triangle_active")
-		}
-	})
-	$(".edit span").click(function(){
-		if(btn== true){
-			$("#infodetails").show()
-			$(".edit span").eq(0).html("收起")
-			$(".edit span").eq(1).html("-")
-			$("#userinfo p").eq(0).css("background","#f4fdff")
-			btn = false;
-		}else{
-			$("#infodetails").hide()
-			$(".edit span").eq(0).html("编辑")
-			$(".edit span").eq(1).html("+")
-				$("#userinfo p").eq(0).css("background","#f7f7f7")
-			btn = true;
-		}
-		
-	})
-	$(".edit1 span").click(function(){
-		if(btn== true){
-			$("#setImg").show()
-			$(".edit1 span").eq(0).html("收起")
-			$(".edit1 span").eq(1).html("-")
-			$("#userimg p").eq(0).css("background","#f4fdff")
-			btn = false;
-		}else{
-			$("#setImg").hide()
-			$(".edit1 span").eq(0).html("编辑")
-			$(".edit1 span").eq(1).html("+")
-				$("#userimg p").eq(0).css("background","#f7f7f7")
-			btn = true;
-		}
-		
-	})
-	$(".edit2 span").click(function(){
-		if(btn== true){
-			$("#subpsw").show()
-			$(".edit2 span").eq(0).html("收起")
-			$(".edit2 span").eq(1).html("-")
-			$("#safepsw p").eq(0).css("background","#f4fdff")
-			btn = false;
-		}else{
-			$("#subpsw").hide()
-			$(".edit2 span").eq(0).html("编辑")
-			$(".edit2 span").eq(1).html("+")
-				$("#safepsw p").eq(0).css("background","#f7f7f7")
-			btn = true;
-		}
-		
-	})
-	$(".edit3 span").click(function(){
-		if(btn== true){
-			$("#subemail").show()
-			$(".edit3 span").eq(0).html("收起")
-			$(".edit3 span").eq(1).html("-")
-			$("#safeemail p").eq(0).css("background","#f4fdff")
-			btn = false;
-		}else{
-			$("#subemail").hide()
-			$(".edit3 span").eq(0).html("编辑")
-			$(".edit3 span").eq(1).html("+")
-				$("#safeemail p").eq(0).css("background","#f7f7f7")
-			btn = true;
-		}
-		
+	var index1 = 0;
+	var index2=0;
+
+$("#tabs li").click(function(){
+	index1 = $(this).index()
+	$("#detail li").eq(index1).show().siblings().hide()
+})
+
+toggle(0)
+toggle(1)
+toggle(2)
+toggle(3)
+toggle(4)
+toggle(5)
+toggle(6)
+
+
+/*修改和收起*/
+function toggle (item){
+	var btn=true;
+	$(".toggle").eq(item).click(function(){
+	    if(btn){
+	    	$(this).html('收起')
+			$("form").eq(item).show()
+			btn=false;
+	    }else{
+	    	$(this).html('修改')
+			$("form").eq(item).hide()
+			btn=true; 
+	    }
+	    	
 	})
 	
+}
+
+		
 	
+	
+
+
+
 </script> 
 </html>
